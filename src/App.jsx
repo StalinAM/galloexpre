@@ -1,4 +1,5 @@
 import { ThemeProvider } from 'styled-components'
+import Header from '../components/Header'
 import GlobalStyles from '../Style/GlobalStyles'
 import { DarkTheme } from '../Style/Theme'
 
@@ -7,7 +8,7 @@ function App() {
     <>
       <GlobalStyles />
       <ThemeProvider theme={DarkTheme}>
-        <div>hola</div>
+        <Header />
       </ThemeProvider>
     </>
   )
