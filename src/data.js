@@ -18,4 +18,23 @@ const nosotros = [
       'Esta compañía nace por la necesidad de trabajo y empeño de un grupo de colaboradores quienes un 3 de octubre de 2006, motivados por el deseo de cumplir un sueño, buscan emprender en el mundo de la transportación pesada creando un logotipo inicial de "TRANSPORTE GALLITO” nombre que daría inicio al nacimiento de algo más grande, por medio del cual ingresamos a muchas empresas de renombre, quienes nos dieron la oportunidad de ejercer nuestras aspiraciones de crecimiento personal, familiar y profesional de manera honrada y responsable. Gracias a Dios y a nuestros fieles clientes que creyeron en nuestras capacidades, habilidades y destrezas, a mediados del 2013, nace la compañía jurídica familiar cuyo nombre es "GALLOEXPRE C.A." más sólida pues somos un equipo que busca seguir creciendo para cumplir las expectativas de nuestros clientes y de la compañía en general. Teniendo como principal objetivo ser útil y servir a la sociedad de manera honrada y responsable.'
   }
 ]
-export { listMenu }
+const servicios = [
+  {
+    id: 1,
+    description: 'Disponemos de transporte nuevo, tipo furgones de toda medida.'
+  },
+  {
+    id: 2,
+    description: 'Plataformas y tráiler para peso liviano y extra pesado.'
+  },
+  { id: 3, description: 'Unidades de transporte con rastreo satelital.' },
+  { id: 4, description: 'Camiones para peso más liviano.' },
+  { id: 5, description: 'Personal altamente capacitado para la manipulación' },
+  {
+    id: 6,
+    description:
+      'Disponemos de Instalaciones propias en las ciudades de Quito y Guayaquil'
+  }
+]
+
+export { listMenu, servicios }
