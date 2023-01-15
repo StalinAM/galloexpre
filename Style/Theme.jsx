@@ -1,9 +1,8 @@
 export const DarkTheme = {
-  Title: 'rgb(255, 193, 5)',
-  Subtitle: 'hsl(0, 0%, 0%)',
-  Description: 'hsl(0, 0%, 48%)',
-  Background: '#011883',
-  Background2: '#606e85',
+  Title: '#001781',
+  Description: '#8B8B8B',
+  Background: '#ffffff',
+  Background2: '#bababa',
   WidthSection: '65rem',
-  Hover: 'hsl(45deg 100% 51% / 20%)'
+  Hover: '#1968ad'
 }
