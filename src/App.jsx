@@ -8,22 +8,19 @@ import Services from '../components/Services'
 import GlobalStyles from '../Style/GlobalStyles'
 import { DarkTheme } from '../Style/Theme'
 
-const Container = styled.main`
-  padding: 0 9rem; ;
-`
 function App() {
   return (
     <>
       <GlobalStyles />
       <ThemeProvider theme={DarkTheme}>
         <Header />
-        <Container>
+        <main>
           <Home />
           <About />
           <Services />
           <Contact />
           <Footer />
-        </Container>
+        </main>
       </ThemeProvider>
     </>
   )
