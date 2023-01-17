@@ -29,5 +29,8 @@ const GlobalStyles = createGlobalStyle`
         border: none;
         outline: none;
     }
+    textarea, input{
+        font-family: 'Poppins', sans-serif;
+    }
 `
 export default GlobalStyles
