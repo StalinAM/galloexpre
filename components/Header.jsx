@@ -6,7 +6,7 @@ const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 2.5rem 0;
+  padding: 1.5rem 6rem 0;
 `
 const Img = styled.img`
   width: 10rem;
