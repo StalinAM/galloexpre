@@ -43,7 +43,7 @@ const Img = styled.img`
 `
 function Home() {
   return (
-    <Container>
+    <Container id='inicio'>
       <Content>
         <Title>
           Servicio de <Span>transporte de carga</Span>
