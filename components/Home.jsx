@@ -4,13 +4,10 @@ import styled from 'styled-components'
 const Container = styled.section`
   display: flex;
   align-items: center;
+  justify-content: space-between;
   min-height: calc(100vh - 128px);
   padding: 0 6rem;
-  background-image: url('../src/assets/background.webp');
-  background-size: contain;
   background-color: ${(props) => props.theme.Background2};
-  background-repeat: no-repeat;
-  background-position: right;
 `
 const Content = styled.div`
   max-width: 60ch;
@@ -41,6 +38,9 @@ const Button = styled.a`
     background-color: ${(props) => props.theme.Hover};
   }
 `
+const Img = styled.img`
+  width: 55%;
+`
 function Home() {
   return (
     <Container>
@@ -51,6 +51,10 @@ function Home() {
         <Paragraph>Líder de carga pesada a nivel nacional</Paragraph>
         <Button href='#contact'>Contáctanos</Button>{' '}
       </Content>
+      <Img
+        src='../src/assets/background.webp'
+        alt='camión de la empresa GalloExpre'
+      />
     </Container>
   )
 }
