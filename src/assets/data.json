@@ -22,5 +22,21 @@
     "Camiones para peso más liviano.",
     "Personal altamente capacitado para la manipulación responsable de su mercadería.",
     "Disponemos de Instalaciones propias en las ciudades de Quito y Guayaquil"
+  ],
+  "direccion": [
+    {
+      "ciudad": "Quito",
+      "direccion": "Chillogallo Santa Rita, Apuela S27-123 y Agustín Miranda.",
+      "celular": "099 243 4904",
+      "correo": "asesor1@galloexpre.com",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.4428355171453!2d-78.54829247077545!3d-0.2780417588982699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5990da608fcd3%3A0x5e45f4d29929d32f!2sCompa%C3%B1%C3%ADa%20de%20Transporte%20Pesado%20Galloexpre%20C.A.!5e0!3m2!1ses!2sec!4v1674057721145!5m2!1ses!2sec"
+    },
+    {
+      "ciudad": "Guayaquil",
+      "direccion": "Cooperativa de vivienda de los Empleados de la Ilustre Municipalidad de Guayaquil \"COVIEM\" Mz.50, Solar 14.",
+      "celular": "098 533 2376",
+      "correo": "asesor2@galloexpre.com",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.7771851785483!2d-79.90410539939339!3d-2.2372088121503544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMTQnMTQuMCJTIDc5wrA1NCcxMC4xIlc!5e0!3m2!1ses-419!2sec!4v1537216473794"
+    }
   ]
 }
