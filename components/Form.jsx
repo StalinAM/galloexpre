@@ -49,7 +49,7 @@ const ButtomForm = styled.button`
 `
 function Form() {
   return (
-    <FormC onSubmit=''>
+    <FormC>
       <Input
         type='text'
         name='name'
@@ -66,7 +66,7 @@ function Form() {
         rows={10}
         placeholder='Ingrese su consulta o requerimiento'
       />
-      <ButtomForm href='#contact'>Send Message</ButtomForm>
+      <ButtomForm href='#contact'>Enviar</ButtomForm>
     </FormC>
   )
 }
