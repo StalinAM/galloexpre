@@ -12,7 +12,7 @@ const Container = styled.section`
   min-height: 100vh;
   flex-direction: column;
   justify-content: center;
-  background-color: ${(props) => props.theme.Backgrounds};
+  background-color: ${(props) => props.theme.Background};
 `
 const Title = styled.h2`
   font-size: 2rem;
