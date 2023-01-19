@@ -49,7 +49,7 @@ function Home() {
           Servicio de <Span>transporte de carga</Span>
         </Title>
         <Paragraph>Líder de carga pesada a nivel nacional</Paragraph>
-        <Button href='#contact'>Contáctanos</Button>{' '}
+        <Button href='#contacto'>Contáctanos</Button>{' '}
       </Content>
       <Img
         src='../src/assets/background.webp'
