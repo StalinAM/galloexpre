@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const FormC = styled.form`
+  margin-top: 2.5rem;
   width: 400px;
   display: flex;
   flex-direction: column;
@@ -19,7 +20,7 @@ const Input = styled.input`
   color: ${(props) => props.theme.Subtitle};
   border: 1px solid ${(props) => props.theme.Description};
   background: none;
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   font-size: 1rem;
   outline: none;
   @media screen and (max-width: 36rem) {
