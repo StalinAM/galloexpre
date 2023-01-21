@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import InputForm from './subComponents/InputForm'
 
 const FormC = styled.form`
   margin-top: 2.5rem;
@@ -15,18 +16,7 @@ const FormC = styled.form`
     width: 100%;
   }
 `
-const Input = styled.input`
-  width: 100%;
-  color: ${(props) => props.theme.Subtitle};
-  border: 1px solid ${(props) => props.theme.Description};
-  background: none;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  outline: none;
-  @media screen and (max-width: 36rem) {
-    padding: 1rem;
-  }
-`
+
 const InputProject = styled.textarea`
   width: 100%;
   border: 1px solid ${(props) => props.theme.Description};
@@ -51,15 +41,23 @@ const ButtomForm = styled.button`
 function Form() {
   return (
     <FormC>
-      <Input
-        type='text'
+      <InputForm
         name='name'
-        placeholder='Ingrese su nombre y apellido'
+        type='name'
+        icon='user'
+        placeholder='Ingrese Nombre y Apellido'
       />
-      <Input
-        type='email'
+      <InputForm
         name='email'
-        placeholder='Ingrese su correo electrónico'
+        type='email'
+        icon='envelope-alt'
+        placeholder='Ingrese su correo'
+      />
+      <InputForm
+        name='phone'
+        type='text'
+        icon='phone-alt'
+        placeholder='Ingrese su número celular'
       />
       <InputProject
         name='project'
