@@ -2,11 +2,13 @@ import React from 'react'
 import styled from 'styled-components'
 import logo from '../src/assets/logoGe.webp'
 const Container = styled.footer`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
+  display: flex;
+  justify-content: space-between;
   justify-items: center;
   padding: 2rem 6rem;
+`
+const Text = styled.p`
+  max-width: 400px;
 `
 const Img = styled.img`
   width: 12rem;
@@ -16,19 +18,28 @@ const Img = styled.img`
 const Social = styled.ul`
   display: flex;
   gap: 1rem;
+  color: ${(props) => props.theme.Title};
 `
 const Icon = styled.li`
-  font-size: 1.5rem;
+  font-size: 2rem;
+  &:hover {
+    color: #ff0000;
+  }
+`
+const Left = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `
 function Footer() {
   return (
     <Container>
-      <div>
+      <Left>
         <Img src={logo} alt='logo Gallo Expre' />
-        <p>
+        <Text>
           Nos preocupamos por el seguimiento y cuidado que debe darse a su
-          mercadería
-        </p>
+          mercadería.
+        </Text>
         <Social>
           <Icon>
             <a href='https://www.facebook.com/GalloExpre-CA-Compa%C3%B1ia-de-Transporte-Pesado-101126645601053'>
@@ -41,7 +52,7 @@ function Footer() {
             </a>
           </Icon>
         </Social>
-      </div>
+      </Left>
       <div>
         <h3>Contacto</h3>
       </div>
