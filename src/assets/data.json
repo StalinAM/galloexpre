@@ -16,12 +16,30 @@
     ]
   },
   "servicios": [
-    "Disponemos de transporte nuevo, tipo furgones de toda medida.",
-    "Plataformas y tráiler para peso liviano y extra pesado.",
-    "Unidades de transporte con rastreo satelital.",
-    "Camiones para peso más liviano.",
-    "Personal altamente capacitado para la manipulación responsable de su mercadería.",
-    "Disponemos de Instalaciones propias en las ciudades de Quito y Guayaquil"
+    {
+      "description": "Transporte nuevo, tipo furgones de toda medida.",
+      "icon": "truck"
+    },
+    {
+      "description": "Plataformas y tráiler para peso liviano y extra pesado.",
+      "icon": "luggage-cart"
+    },
+    {
+      "description": "Unidades de transporte con rastreo satelital.",
+      "icon": "wifi"
+    },
+    {
+      "description": "Camiones para peso más liviano.",
+      "icon": "truck"
+    },
+    {
+      "description": "Personal altamente capacitado para la manipulación responsable de su mercadería.",
+      "icon": "users-alt"
+    },
+    {
+      "description": "Disponemos de Instalaciones propias en las ciudades de Quito y Guayaquil",
+      "icon": "building"
+    }
   ],
   "direccion": [
     {
