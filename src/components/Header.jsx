@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../src/assets/logoGe.webp'
-import { listMenu } from '../src/data'
+import logo from '../assets/logoGe.webp'
+import { listMenu } from '../data'
 const Container = styled.header`
   display: flex;
   justify-content: space-between;

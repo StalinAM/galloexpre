@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import data from '../src/assets/data.json'
+import data from '../assets/data.json'
 
 const Container = styled.section`
   display: flex;
