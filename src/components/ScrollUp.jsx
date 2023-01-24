@@ -24,7 +24,10 @@ const Scroll = styled.a`
 `
 const Icon = styled.i`
   font-size: 1.5rem;
-  color: ${(props) => props.theme.Subtitle};
+  color: ${(props) => props.theme.Title};
+  &:hover {
+    color: white;
+  }
   @media screen and (max-width: 62rem) {
     font-size: 1.25rem;
   }
