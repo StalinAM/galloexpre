@@ -19,6 +19,25 @@ const Menu = styled.ul`
   color: var();
   font-weight: bold;
 `
+const Item = styled.li`
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    color: ${(props) => props.theme.Title};
+  }
+  &::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    background-color: ${(props) => props.theme.Title};
+    bottom: -10px;
+    transition: 0.3s;
+    width: 0%;
+  }
+  &:hover::before {
+    width: 100%;
+  }
+`
 function Header() {
   return (
     <Container>
@@ -26,9 +45,9 @@ function Header() {
       <nav>
         <Menu>
           {listMenu.map((item) => (
-            <li key={item.id}>
+            <Item key={item.id}>
               <a href={item.link}>{item.title.toUpperCase()}</a>
-            </li>
+            </Item>
           ))}
         </Menu>
       </nav>
