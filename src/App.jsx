@@ -4,6 +4,7 @@ import Contact from './components/Contact'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Home from './components/Home'
+import ScrollUp from './components/ScrollUp'
 import Services from './components/Services'
 import GlobalStyles from './Style/GlobalStyles'
 import { DarkTheme } from './Style/Theme'
@@ -21,6 +22,7 @@ function App() {
           <Contact />
           <Footer />
         </main>
+        <ScrollUp />
       </ThemeProvider>
     </>
   )
