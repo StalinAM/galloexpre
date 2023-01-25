@@ -4,9 +4,7 @@ import styled from 'styled-components'
 const Container = styled.div`
   position: fixed;
   top: 50%;
-  right: -170px;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
+  right: -150px;
   transform: translateY(-50%);
   z-index: 9;
   border-radius: 2em 0 0 2em;
@@ -33,7 +31,7 @@ const Icon = styled.i`
   font-size: 2.3rem;
 `
 const Text = styled.p`
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 `
 function Whatsapp() {
   return (
