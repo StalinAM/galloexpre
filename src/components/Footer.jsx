@@ -31,7 +31,12 @@ const Menu = styled.ul`
   gap: 0.7rem;
   font-size: 1.1rem;
 `
+const Title = styled.h3`
+  font-size: 1.2rem;
+`
+
 const Link = styled.li`
+  font-size: 1rem;
   &:hover {
     color: #ff0000;
   }
@@ -70,6 +75,7 @@ function Footer() {
       </Left>
       <div>
         <Menu>
+          <Title>Menú</Title>
           <Link>
             <a href='#inicio'>Inicio</a>
           </Link>
@@ -102,7 +108,7 @@ function Footer() {
         </Social>
       </div>
       <Contacto>
-        <h3>Contácto</h3>
+        <Title>Contácto</Title>
         <p>
           Amparo Gallo: <span>099 243 4904</span>
         </p>
