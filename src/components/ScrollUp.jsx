@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from 'react'
 import styled from 'styled-components'
+
+const Icon = styled.i`
+  font-size: 1.5rem;
+  color: white;
+
+  @media screen and (max-width: 62rem) {
+    font-size: 1.25rem;
+  }
+`
 const Scroll = styled.a`
   position: fixed;
   right: 2.5rem;
@@ -8,9 +17,9 @@ const Scroll = styled.a`
   padding: 0.3rem 0.5rem;
   border-radius: 0.4rem;
   z-index: 10;
-  border: 1px solid ${(props) => props.theme.Title};
-  background-color: ${(props) => props.theme.Background};
+  background-color: ${(props) => props.theme.Title};
   transition: 0.4s;
+  box-shadow: -1px 3px 3px rgb(0 0 0 / 20%);
   &:hover {
     background-color: ${(props) => props.theme.Hover};
   }
@@ -22,16 +31,7 @@ const Scroll = styled.a`
     right: 1rem;
   }
 `
-const Icon = styled.i`
-  font-size: 1.5rem;
-  color: ${(props) => props.theme.Title};
-  &:hover {
-    color: white;
-  }
-  @media screen and (max-width: 62rem) {
-    font-size: 1.25rem;
-  }
-`
+
 function ScrollUp() {
   const [show, setShow] = useState(false)
   //   the scroll is displayed when passing 50 vw
