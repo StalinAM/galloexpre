@@ -16,7 +16,7 @@ const Img = styled.img`
 const Menu = styled.ul`
   display: flex;
   gap: 2rem;
-  color: var();
+  color: ${(props) => props.theme.Description};
   font-weight: bold;
 `
 const Item = styled.li`
