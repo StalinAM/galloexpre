@@ -36,6 +36,8 @@ const History = styled.article`
 `
 const Info = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 4rem;
 `
 const Box = styled.article`
