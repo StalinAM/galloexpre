@@ -10,24 +10,36 @@ const Container = styled.section`
   flex-direction: column;
   justify-content: center;
   background-color: ${(props) => props.theme.Background};
+  @media screen and (max-width: 1080px) {
+    padding: 0 3rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0 1.5rem;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 0 1rem;
+  }
 `
 const Title = styled.h2`
   font-size: 2rem;
 `
 const Content = styled.div`
   display: flex;
+  align-items: center;
+  gap: 4rem;
 `
 const History = styled.article`
+  max-width: 50ch;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  padding-right: 10rem;
 `
 const Info = styled.div`
   display: flex;
   gap: 4rem;
 `
 const Box = styled.article`
+  max-width: 50ch;
   display: flex;
   flex-direction: column;
   gap: 1rem;

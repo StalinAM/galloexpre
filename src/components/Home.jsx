@@ -8,6 +8,15 @@ const Container = styled.section`
   min-height: calc(100vh - 128px);
   padding: 0 6rem;
   background-color: ${(props) => props.theme.Background2};
+  @media screen and (max-width: 1080px) {
+    padding: 0 3rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0 1.5rem;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 0 1rem;
+  }
 `
 const Content = styled.div`
   max-width: 60ch;

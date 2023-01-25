@@ -6,6 +6,15 @@ const Container = styled.footer`
   justify-content: space-between;
   justify-items: center;
   padding: 2rem 6rem;
+  @media screen and (max-width: 1080px) {
+    padding: 0 3rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 0 1.5rem;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 0 1rem;
+  }
 `
 const Text = styled.p`
   max-width: 400px;
