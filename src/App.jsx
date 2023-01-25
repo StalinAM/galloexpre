@@ -21,8 +21,8 @@ function App() {
           <About />
           <Services />
           <Contact />
-          <Footer />
         </main>
+        <Footer />
         <ScrollUp />
         <Whatsapp />
       </ThemeProvider>
