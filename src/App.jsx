@@ -6,6 +6,7 @@ import Header from './components/Header'
 import Home from './components/Home'
 import ScrollUp from './components/ScrollUp'
 import Services from './components/Services'
+import Whatsapp from './components/Whatsapp'
 import GlobalStyles from './Style/GlobalStyles'
 import { DarkTheme } from './Style/Theme'
 
@@ -23,6 +24,7 @@ function App() {
           <Footer />
         </main>
         <ScrollUp />
+        <Whatsapp />
       </ThemeProvider>
     </>
   )
