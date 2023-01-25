@@ -1,21 +1,52 @@
 import React from 'react'
 import styled from 'styled-components'
-const Icon = styled.a`
-  color: #45c556;
-  font-size: 4rem;
+
+const Container = styled.div`
   position: fixed;
-  right: 0;
   top: 50%;
+  right: -170px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 9;
+  border-radius: 2em 0 0 2em;
+  overflow: auto;
+  box-shadow: -1px 3px 3px rgb(0 0 0 / 20%);
+  transition: all 0.3s ease;
+  padding: 0 12px 0;
+  background: #1bd741;
+  &:hover {
+    right: -2px;
+  }
+`
+const Link = styled.a`
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+  text-align: center;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  line-height: 62px;
+  color: white;
+`
+const Icon = styled.i`
+  font-size: 2.3rem;
+`
+const Text = styled.p`
+  font-size: 1.8rem;
 `
 function Whatsapp() {
   return (
-    <Icon
-      href='https://wa.me/593984662435?text=Me%20ayudas%20con%20información%20'
-      target='_blank'
-      rel='noreferrer'
-    >
-      <i class='uil uil-whatsapp' />
-    </Icon>
+    <Container>
+      <Link
+        href='https://wa.me/593984662435?text=Me%20ayudas%20con%20información%20'
+        target='_blank'
+        rel='noreferrer'
+      >
+        <Icon className='uil uil-whatsapp' />
+        <Text>Escríbenos</Text>
+      </Link>
+    </Container>
   )
 }
 
