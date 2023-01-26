@@ -14,7 +14,8 @@ After ![](./public/After.webp)
 
 ### Links
 
-- Live Site URL: [GalloExpre](https://stalinam.github.io/galloexpre/)
+- [original website](https://www.galloexpre.com/)
+- [optimized website](https://stalinam.github.io/galloexpre/)
 
 ## My process
 
