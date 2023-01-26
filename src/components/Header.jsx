@@ -7,6 +7,15 @@ const Container = styled.header`
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 6rem 0;
+  @media screen and (max-width: 1080px) {
+    padding: 1.5rem 3rem;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 1.5rem 1.5rem;
+  }
+  @media screen and (max-width: 480px) {
+    padding: 1.5rem 1rem;
+  }
 `
 const Img = styled.img`
   width: 10rem;

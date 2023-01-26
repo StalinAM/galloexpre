@@ -10,7 +10,7 @@ const Title = styled.h3`
   color: ${(props) => props.theme.Title};
 `
 const ListContact = styled.ul`
-  max-width: 450px;
+  max-width: 50ch;
   display: flex;
   flex-direction: column;
 `
@@ -24,7 +24,7 @@ const Icon = styled.i`
   color: #ff0000;
 `
 const Map = styled.iframe`
-  width: 405px;
+  width: 400px;
   height: 300px;
   border: 0;
 `

@@ -7,13 +7,16 @@ const Container = styled.footer`
   justify-items: center;
   padding: 2rem 6rem;
   @media screen and (max-width: 1080px) {
-    padding: 0 3rem;
+    padding: 3rem 3rem;
+    gap: 2rem;
   }
   @media screen and (max-width: 768px) {
-    padding: 0 1.5rem;
+    padding: 3rem 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   @media screen and (max-width: 480px) {
-    padding: 0 1rem;
+    padding: 3rem 1rem;
   }
 `
 const Text = styled.p`
@@ -61,6 +64,7 @@ const Left = styled.div`
 const Contacto = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.7rem;
 `
 function Footer() {

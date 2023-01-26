@@ -11,13 +11,13 @@ const Container = styled.section`
   justify-content: center;
   background-color: ${(props) => props.theme.Background};
   @media screen and (max-width: 1080px) {
-    padding: 0 3rem;
+    padding: 3rem 3rem;
   }
   @media screen and (max-width: 768px) {
-    padding: 0 1.5rem;
+    padding: 3rem 1.5rem;
   }
   @media screen and (max-width: 480px) {
-    padding: 0 1rem;
+    padding: 3rem 1rem;
   }
 `
 const Title = styled.h2`
@@ -27,6 +27,10 @@ const Content = styled.div`
   display: flex;
   align-items: center;
   gap: 4rem;
+  @media screen and (max-width: 1080px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 `
 const History = styled.article`
   max-width: 50ch;
@@ -48,7 +52,7 @@ const Box = styled.article`
   background-color: ${(props) => props.theme.Background2};
   padding: 2rem;
   border-radius: 2rem;
-  background-image: url('../src/assets/6.webp');
+  background-image: url(${(props) => props.background});
   background-size: cover;
   background-blend-mode: soft-light;
 `
@@ -90,7 +94,7 @@ function About() {
         </History>
         <Info>
           {data.nosotros.info.map((item, index) => (
-            <Box key={index}>
+            <Box key={index} background={item.background}>
               <TitleInfo>{item.name}</TitleInfo>
               <p>{item.description}</p>
             </Box>

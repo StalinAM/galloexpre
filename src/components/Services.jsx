@@ -12,13 +12,13 @@ const Container = styled.section`
   justify-content: center;
   background-color: ${(props) => props.theme.Background2};
   @media screen and (max-width: 1080px) {
-    padding: 0 3rem;
+    padding: 3rem 3rem;
   }
   @media screen and (max-width: 768px) {
-    padding: 0 1.5rem;
+    padding: 3rem 1.5rem;
   }
   @media screen and (max-width: 480px) {
-    padding: 0 1rem;
+    padding: 3rem 1rem;
   }
 `
 const Title = styled.h2`

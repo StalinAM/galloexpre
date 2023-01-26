@@ -14,9 +14,6 @@ const Input = styled.input`
   padding: 0.5rem 1rem;
   font-size: 1rem;
   outline: none;
-  @media screen and (max-width: 36rem) {
-    padding: 1rem;
-  }
 `
 const Icon = styled.i`
   border: 1px solid ${(props) => props.theme.Title};
