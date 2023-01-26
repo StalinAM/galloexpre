@@ -47,7 +47,7 @@ Error generating stack: `+l.message+`
  */var ge=typeof Symbol=="function"&&Symbol.for,Xu=ge?Symbol.for("react.element"):60103,Zu=ge?Symbol.for("react.portal"):60106,cl=ge?Symbol.for("react.fragment"):60107,dl=ge?Symbol.for("react.strict_mode"):60108,fl=ge?Symbol.for("react.profiler"):60114,pl=ge?Symbol.for("react.provider"):60109,ml=ge?Symbol.for("react.context"):60110,Ju=ge?Symbol.for("react.async_mode"):60111,hl=ge?Symbol.for("react.concurrent_mode"):60111,vl=ge?Symbol.for("react.forward_ref"):60112,gl=ge?Symbol.for("react.suspense"):60113,$m=ge?Symbol.for("react.suspense_list"):60120,yl=ge?Symbol.for("react.memo"):60115,wl=ge?Symbol.for("react.lazy"):60116,Nm=ge?Symbol.for("react.block"):60121,Tm=ge?Symbol.for("react.fundamental"):60117,Rm=ge?Symbol.for("react.responder"):60118,Am=ge?Symbol.for("react.scope"):60119;function Ze(e){if(typeof e=="object"&&e!==null){var t=e.$$typeof;switch(t){case Xu:switch(e=e.type,e){case Ju:case hl:case cl:case fl:case dl:case gl:return e;default:switch(e=e&&e.$$typeof,e){case ml:case vl:case wl:case yl:case pl:return e;default:return t}}case Zu:return t}}}function Od(e){return Ze(e)===hl}J.AsyncMode=Ju;J.ConcurrentMode=hl;J.ContextConsumer=ml;J.ContextProvider=pl;J.Element=Xu;J.ForwardRef=vl;J.Fragment=cl;J.Lazy=wl;J.Memo=yl;J.Portal=Zu;J.Profiler=fl;J.StrictMode=dl;J.Suspense=gl;J.isAsyncMode=function(e){return Od(e)||Ze(e)===Ju};J.isConcurrentMode=Od;J.isContextConsumer=function(e){return Ze(e)===ml};J.isContextProvider=function(e){return Ze(e)===pl};J.isElement=function(e){return typeof e=="object"&&e!==null&&e.$$typeof===Xu};J.isForwardRef=function(e){return Ze(e)===vl};J.isFragment=function(e){return Ze(e)===cl};J.isLazy=function(e){return Ze(e)===wl};J.isMemo=function(e){return Ze(e)===yl};J.isPortal=function(e){return Ze(e)===Zu};J.isProfiler=function(e){return Ze(e)===fl};J.isStrictMode=function(e){return Ze(e)===dl};J.isSuspense=function(e){return Ze(e)===gl};J.isValidElementType=function(e){return typeof e=="string"||typeof e=="function"||e===cl||e===hl||e===fl||e===dl||e===gl||e===$m||typeof e=="object"&&e!==null&&(e.$$typeof===wl||e.$$typeof===yl||e.$$typeof===pl||e.$$typeof===ml||e.$$typeof===vl||e.$$typeof===Tm||e.$$typeof===Rm||e.$$typeof===Am||e.$$typeof===Nm)};J.typeOf=Ze;(function(e){e.exports=J})(zm);function Lm(e){function t(_,z,T,M,v){for(var V=0,E=0,oe=0,Y=0,X,U,we=0,Me=0,G,ze=G=X=0,K=0,Se=0,Gn=0,ke=0,Br=T.length,Yn=Br-1,rt,F="",ae="",Sl="",kl="",$t;K<Br;){if(U=T.charCodeAt(K),K===Yn&&E+Y+oe+V!==0&&(E!==0&&(U=E===47?10:47),Y=oe=V=0,Br++,Yn++),E+Y+oe+V===0){if(K===Yn&&(0<Se&&(F=F.replace(p,"")),0<F.trim().length)){switch(U){case 32:case 9:case 59:case 13:case 10:break;default:F+=T.charAt(K)}U=59}switch(U){case 123:for(F=F.trim(),X=F.charCodeAt(0),G=1,ke=++K;K<Br;){switch(U=T.charCodeAt(K)){case 123:G++;break;case 125:G--;break;case 47:switch(U=T.charCodeAt(K+1)){case 42:case 47:e:{for(ze=K+1;ze<Yn;++ze)switch(T.charCodeAt(ze)){case 47:if(U===42&&T.charCodeAt(ze-1)===42&&K+2!==ze){K=ze+1;break e}break;case 10:if(U===47){K=ze+1;break e}}K=ze}}break;case 91:U++;case 40:U++;case 34:case 39:for(;K++<Yn&&T.charCodeAt(K)!==U;);}if(G===0)break;K++}switch(G=T.substring(ke,K),X===0&&(X=(F=F.replace(m,"").trim()).charCodeAt(0)),X){case 64:switch(0<Se&&(F=F.replace(p,"")),U=F.charCodeAt(1),U){case 100:case 109:case 115:case 45:Se=z;break;default:Se=gt}if(G=t(z,Se,G,U,v+1),ke=G.length,0<C&&(Se=n(gt,F,Gn),$t=u(3,G,Se,z,ye,de,ke,U,v,M),F=Se.join(""),$t!==void 0&&(ke=(G=$t.trim()).length)===0&&(U=0,G="")),0<ke)switch(U){case 115:F=F.replace($,o);case 100:case 109:case 45:G=F+"{"+G+"}";break;case 107:F=F.replace(s,"$1 $2"),G=F+"{"+G+"}",G=Pe===1||Pe===2&&l("@"+G,3)?"@-webkit-"+G+"@"+G:"@"+G;break;default:G=F+G,M===112&&(G=(ae+=G,""))}else G="";break;default:G=t(z,n(z,F,Gn),G,M,v+1)}Sl+=G,G=Gn=Se=ze=X=0,F="",U=T.charCodeAt(++K);break;case 125:case 59:if(F=(0<Se?F.replace(p,""):F).trim(),1<(ke=F.length))switch(ze===0&&(X=F.charCodeAt(0),X===45||96<X&&123>X)&&(ke=(F=F.replace(" ",":")).length),0<C&&($t=u(1,F,z,_,ye,de,ae.length,M,v,M))!==void 0&&(ke=(F=$t.trim()).length)===0&&(F="\0\0"),X=F.charCodeAt(0),U=F.charCodeAt(1),X){case 0:break;case 64:if(U===105||U===99){kl+=F+T.charAt(K);break}default:F.charCodeAt(ke-1)!==58&&(ae+=i(F,X,U,F.charCodeAt(2)))}Gn=Se=ze=X=0,F="",U=T.charCodeAt(++K)}}switch(U){case 13:case 10:E===47?E=0:1+X===0&&M!==107&&0<F.length&&(Se=1,F+="\0"),0<C*j&&u(0,F,z,_,ye,de,ae.length,M,v,M),de=1,ye++;break;case 59:case 125:if(E+Y+oe+V===0){de++;break}default:switch(de++,rt=T.charAt(K),U){case 9:case 32:if(Y+V+E===0)switch(we){case 44:case 58:case 9:case 32:rt="";break;default:U!==32&&(rt=" ")}break;case 0:rt="\\0";break;case 12:rt="\\f";break;case 11:rt="\\v";break;case 38:Y+E+V===0&&(Se=Gn=1,rt="\f"+rt);break;case 108:if(Y+E+V+Ve===0&&0<ze)switch(K-ze){case 2:we===112&&T.charCodeAt(K-3)===58&&(Ve=we);case 8:Me===111&&(Ve=Me)}break;case 58:Y+E+V===0&&(ze=K);break;case 44:E+oe+Y+V===0&&(Se=1,rt+="\r");break;case 34:case 39:E===0&&(Y=Y===U?0:Y===0?U:Y);break;case 91:Y+E+oe===0&&V++;break;case 93:Y+E+oe===0&&V--;break;case 41:Y+E+V===0&&oe--;break;case 40:if(Y+E+V===0){if(X===0)switch(2*we+3*Me){case 533:break;default:X=1}oe++}break;case 64:E+oe+Y+V+ze+G===0&&(G=1);break;case 42:case 47:if(!(0<Y+V+oe))switch(E){case 0:switch(2*U+3*T.charCodeAt(K+1)){case 235:E=47;break;case 220:ke=K,E=42}break;case 42:U===47&&we===42&&ke+2!==K&&(T.charCodeAt(ke+2)===33&&(ae+=T.substring(ke,K+1)),rt="",E=0)}}E===0&&(F+=rt)}Me=we,we=U,K++}if(ke=ae.length,0<ke){if(Se=z,0<C&&($t=u(2,ae,Se,_,ye,de,ke,M,v,M),$t!==void 0&&(ae=$t).length===0))return kl+ae+Sl;if(ae=Se.join(",")+"{"+ae+"}",Pe*Ve!==0){switch(Pe!==2||l(ae,2)||(Ve=0),Ve){case 111:ae=ae.replace(g,":-moz-$1")+ae;break;case 112:ae=ae.replace(f,"::-webkit-input-$1")+ae.replace(f,"::-moz-$1")+ae.replace(f,":-ms-input-$1")+ae}Ve=0}}return kl+ae+Sl}function n(_,z,T){var M=z.trim().split(L);z=M;var v=M.length,V=_.length;switch(V){case 0:case 1:var E=0;for(_=V===0?"":_[0]+" ";E<v;++E)z[E]=r(_,z[E],T).trim();break;default:var oe=E=0;for(z=[];E<v;++E)for(var Y=0;Y<V;++Y)z[oe++]=r(_[Y]+" ",M[E],T).trim()}return z}function r(_,z,T){var M=z.charCodeAt(0);switch(33>M&&(M=(z=z.trim()).charCodeAt(0)),M){case 38:return z.replace(d,"$1"+_.trim());case 58:return _.trim()+z.replace(d,"$1"+_.trim());default:if(0<1*T&&0<z.indexOf("\f"))return z.replace(d,(_.charCodeAt(0)===58?"":"$1")+_.trim())}return _+z}function i(_,z,T,M){var v=_+";",V=2*z+3*T+4*M;if(V===944){_=v.indexOf(":",9)+1;var E=v.substring(_,v.length-1).trim();return E=v.substring(0,_).trim()+E+";",Pe===1||Pe===2&&l(E,1)?"-webkit-"+E+E:E}if(Pe===0||Pe===2&&!l(v,1))return v;switch(V){case 1015:return v.charCodeAt(10)===97?"-webkit-"+v+v:v;case 951:return v.charCodeAt(3)===116?"-webkit-"+v+v:v;case 963:return v.charCodeAt(5)===110?"-webkit-"+v+v:v;case 1009:if(v.charCodeAt(4)!==100)break;case 969:case 942:return"-webkit-"+v+v;case 978:return"-webkit-"+v+"-moz-"+v+v;case 1019:case 983:return"-webkit-"+v+"-moz-"+v+"-ms-"+v+v;case 883:if(v.charCodeAt(8)===45)return"-webkit-"+v+v;if(0<v.indexOf("image-set(",11))return v.replace(me,"$1-webkit-$2")+v;break;case 932:if(v.charCodeAt(4)===45)switch(v.charCodeAt(5)){case 103:return"-webkit-box-"+v.replace("-grow","")+"-webkit-"+v+"-ms-"+v.replace("grow","positive")+v;case 115:return"-webkit-"+v+"-ms-"+v.replace("shrink","negative")+v;case 98:return"-webkit-"+v+"-ms-"+v.replace("basis","preferred-size")+v}return"-webkit-"+v+"-ms-"+v+v;case 964:return"-webkit-"+v+"-ms-flex-"+v+v;case 1023:if(v.charCodeAt(8)!==99)break;return E=v.substring(v.indexOf(":",15)).replace("flex-","").replace("space-between","justify"),"-webkit-box-pack"+E+"-webkit-"+v+"-ms-flex-pack"+E+v;case 1005:return y.test(v)?v.replace(w,":-webkit-")+v.replace(w,":-moz-")+v:v;case 1e3:switch(E=v.substring(13).trim(),z=E.indexOf("-")+1,E.charCodeAt(0)+E.charCodeAt(z)){case 226:E=v.replace(x,"tb");break;case 232:E=v.replace(x,"tb-rl");break;case 220:E=v.replace(x,"lr");break;default:return v}return"-webkit-"+v+"-ms-"+E+v;case 1017:if(v.indexOf("sticky",9)===-1)break;case 975:switch(z=(v=_).length-10,E=(v.charCodeAt(z)===33?v.substring(0,z):v).substring(_.indexOf(":",7)+1).trim(),V=E.charCodeAt(0)+(E.charCodeAt(7)|0)){case 203:if(111>E.charCodeAt(8))break;case 115:v=v.replace(E,"-webkit-"+E)+";"+v;break;case 207:case 102:v=v.replace(E,"-webkit-"+(102<V?"inline-":"")+"box")+";"+v.replace(E,"-webkit-"+E)+";"+v.replace(E,"-ms-"+E+"box")+";"+v}return v+";";case 938:if(v.charCodeAt(5)===45)switch(v.charCodeAt(6)){case 105:return E=v.replace("-items",""),"-webkit-"+v+"-webkit-box-"+E+"-ms-flex-"+E+v;case 115:return"-webkit-"+v+"-ms-flex-item-"+v.replace(N,"")+v;default:return"-webkit-"+v+"-ms-flex-line-pack"+v.replace("align-content","").replace(N,"")+v}break;case 973:case 989:if(v.charCodeAt(3)!==45||v.charCodeAt(4)===122)break;case 931:case 953:if(D.test(_)===!0)return(E=_.substring(_.indexOf(":")+1)).charCodeAt(0)===115?i(_.replace("stretch","fill-available"),z,T,M).replace(":fill-available",":stretch"):v.replace(E,"-webkit-"+E)+v.replace(E,"-moz-"+E.replace("fill-",""))+v;break;case 962:if(v="-webkit-"+v+(v.charCodeAt(5)===102?"-ms-"+v:"")+v,T+M===211&&v.charCodeAt(13)===105&&0<v.indexOf("transform",10))return v.substring(0,v.indexOf(";",27)+1).replace(S,"$1-webkit-$2")+v}return v}function l(_,z){var T=_.indexOf(z===1?":":"{"),M=_.substring(0,z!==3?T:10);return T=_.substring(T+1,_.length-1),O(z!==2?M:M.replace(Q,"$1"),T,z)}function o(_,z){var T=i(z,z.charCodeAt(0),z.charCodeAt(1),z.charCodeAt(2));return T!==z+";"?T.replace(A," or ($1)").substring(4):"("+z+")"}function u(_,z,T,M,v,V,E,oe,Y,X){for(var U=0,we=z,Me;U<C;++U)switch(Me=Ae[U].call(h,_,we,T,M,v,V,E,oe,Y,X)){case void 0:case!1:case!0:case null:break;default:we=Me}if(we!==z)return we}function a(_){switch(_){case void 0:case null:C=Ae.length=0;break;default:if(typeof _=="function")Ae[C++]=_;else if(typeof _=="object")for(var z=0,T=_.length;z<T;++z)a(_[z]);else j=!!_|0}return a}function c(_){return _=_.prefix,_!==void 0&&(O=null,_?typeof _!="function"?Pe=1:(Pe=2,O=_):Pe=0),c}function h(_,z){var T=_;if(33>T.charCodeAt(0)&&(T=T.trim()),q=T,T=[q],0<C){var M=u(-1,z,T,T,ye,de,0,0,0,0);M!==void 0&&typeof M=="string"&&(z=M)}var v=t(gt,T,z,0,0);return 0<C&&(M=u(-2,v,T,T,ye,de,v.length,0,0,0),M!==void 0&&(v=M)),q="",Ve=0,de=ye=1,v}var m=/^\0+/g,p=/[\0\r\f]/g,w=/: */g,y=/zoo|gra/,S=/([,: ])(transform)/g,L=/,\r+?/g,d=/([\t\r\n ])*\f?&/g,s=/@(k\w+)\s*(\S*)\s*/,f=/::(place)/g,g=/:(read-only)/g,x=/[svh]\w+-[tblr]{2}/,$=/\(\s*(.*)\s*\)/g,A=/([\s\S]*?);/g,N=/-self|flex-/g,Q=/[^]*?(:[rp][el]a[\w-]+)[^]*/,D=/stretch|:\s*\w+\-(?:conte|avail)/,me=/([^-])(image-set\()/,de=1,ye=1,Ve=0,Pe=1,gt=[],Ae=[],C=0,O=null,j=0,q="";return h.use=a,h.set=c,e!==void 0&&c(e),h}var Im={animationIterationCount:1,borderImageOutset:1,borderImageSlice:1,borderImageWidth:1,boxFlex:1,boxFlexGroup:1,boxOrdinalGroup:1,columnCount:1,columns:1,flex:1,flexGrow:1,flexPositive:1,flexShrink:1,flexNegative:1,flexOrder:1,gridRow:1,gridRowEnd:1,gridRowSpan:1,gridRowStart:1,gridColumn:1,gridColumnEnd:1,gridColumnSpan:1,gridColumnStart:1,msGridRow:1,msGridRowSpan:1,msGridColumn:1,msGridColumnSpan:1,fontWeight:1,lineHeight:1,opacity:1,order:1,orphans:1,tabSize:1,widows:1,zIndex:1,zoom:1,WebkitLineClamp:1,fillOpacity:1,floodOpacity:1,stopOpacity:1,strokeDasharray:1,strokeDashoffset:1,strokeMiterlimit:1,strokeOpacity:1,strokeWidth:1};function Om(e){var t=Object.create(null);return function(n){return t[n]===void 0&&(t[n]=e(n)),t[n]}}var jm=/^((children|dangerouslySetInnerHTML|key|ref|autoFocus|defaultValue|defaultChecked|innerHTML|suppressContentEditableWarning|suppressHydrationWarning|valueLink|abbr|accept|acceptCharset|accessKey|action|allow|allowUserMedia|allowPaymentRequest|allowFullScreen|allowTransparency|alt|async|autoComplete|autoPlay|capture|cellPadding|cellSpacing|challenge|charSet|checked|cite|classID|className|cols|colSpan|content|contentEditable|contextMenu|controls|controlsList|coords|crossOrigin|data|dateTime|decoding|default|defer|dir|disabled|disablePictureInPicture|download|draggable|encType|enterKeyHint|form|formAction|formEncType|formMethod|formNoValidate|formTarget|frameBorder|headers|height|hidden|high|href|hrefLang|htmlFor|httpEquiv|id|inputMode|integrity|is|keyParams|keyType|kind|label|lang|list|loading|loop|low|marginHeight|marginWidth|max|maxLength|media|mediaGroup|method|min|minLength|multiple|muted|name|nonce|noValidate|open|optimum|pattern|placeholder|playsInline|poster|preload|profile|radioGroup|readOnly|referrerPolicy|rel|required|reversed|role|rows|rowSpan|sandbox|scope|scoped|scrolling|seamless|selected|shape|size|sizes|slot|span|spellCheck|src|srcDoc|srcLang|srcSet|start|step|style|summary|tabIndex|target|title|translate|type|useMap|value|width|wmode|wrap|about|datatype|inlist|prefix|property|resource|typeof|vocab|autoCapitalize|autoCorrect|autoSave|color|incremental|fallback|inert|itemProp|itemScope|itemType|itemID|itemRef|on|option|results|security|unselectable|accentHeight|accumulate|additive|alignmentBaseline|allowReorder|alphabetic|amplitude|arabicForm|ascent|attributeName|attributeType|autoReverse|azimuth|baseFrequency|baselineShift|baseProfile|bbox|begin|bias|by|calcMode|capHeight|clip|clipPathUnits|clipPath|clipRule|colorInterpolation|colorInterpolationFilters|colorProfile|colorRendering|contentScriptType|contentStyleType|cursor|cx|cy|d|decelerate|descent|diffuseConstant|direction|display|divisor|dominantBaseline|dur|dx|dy|edgeMode|elevation|enableBackground|end|exponent|externalResourcesRequired|fill|fillOpacity|fillRule|filter|filterRes|filterUnits|floodColor|floodOpacity|focusable|fontFamily|fontSize|fontSizeAdjust|fontStretch|fontStyle|fontVariant|fontWeight|format|from|fr|fx|fy|g1|g2|glyphName|glyphOrientationHorizontal|glyphOrientationVertical|glyphRef|gradientTransform|gradientUnits|hanging|horizAdvX|horizOriginX|ideographic|imageRendering|in|in2|intercept|k|k1|k2|k3|k4|kernelMatrix|kernelUnitLength|kerning|keyPoints|keySplines|keyTimes|lengthAdjust|letterSpacing|lightingColor|limitingConeAngle|local|markerEnd|markerMid|markerStart|markerHeight|markerUnits|markerWidth|mask|maskContentUnits|maskUnits|mathematical|mode|numOctaves|offset|opacity|operator|order|orient|orientation|origin|overflow|overlinePosition|overlineThickness|panose1|paintOrder|pathLength|patternContentUnits|patternTransform|patternUnits|pointerEvents|points|pointsAtX|pointsAtY|pointsAtZ|preserveAlpha|preserveAspectRatio|primitiveUnits|r|radius|refX|refY|renderingIntent|repeatCount|repeatDur|requiredExtensions|requiredFeatures|restart|result|rotate|rx|ry|scale|seed|shapeRendering|slope|spacing|specularConstant|specularExponent|speed|spreadMethod|startOffset|stdDeviation|stemh|stemv|stitchTiles|stopColor|stopOpacity|strikethroughPosition|strikethroughThickness|string|stroke|strokeDasharray|strokeDashoffset|strokeLinecap|strokeLinejoin|strokeMiterlimit|strokeOpacity|strokeWidth|surfaceScale|systemLanguage|tableValues|targetX|targetY|textAnchor|textDecoration|textRendering|textLength|to|transform|u1|u2|underlinePosition|underlineThickness|unicode|unicodeBidi|unicodeRange|unitsPerEm|vAlphabetic|vHanging|vIdeographic|vMathematical|values|vectorEffect|version|vertAdvY|vertOriginX|vertOriginY|viewBox|viewTarget|visibility|widths|wordSpacing|writingMode|x|xHeight|x1|x2|xChannelSelector|xlinkActuate|xlinkArcrole|xlinkHref|xlinkRole|xlinkShow|xlinkTitle|xlinkType|xmlBase|xmlns|xmlnsXlink|xmlLang|xmlSpace|y|y1|y2|yChannelSelector|z|zoomAndPan|for|class|autofocus)|(([Dd][Aa][Tt][Aa]|[Aa][Rr][Ii][Aa]|x)-.*))$/,ds=Om(function(e){return jm.test(e)||e.charCodeAt(0)===111&&e.charCodeAt(1)===110&&e.charCodeAt(2)<91}),qu=Ir,Mm={childContextTypes:!0,contextType:!0,contextTypes:!0,defaultProps:!0,displayName:!0,getDefaultProps:!0,getDerivedStateFromError:!0,getDerivedStateFromProps:!0,mixins:!0,propTypes:!0,type:!0},Dm={name:!0,length:!0,prototype:!0,caller:!0,callee:!0,arguments:!0,arity:!0},Fm={$$typeof:!0,render:!0,defaultProps:!0,displayName:!0,propTypes:!0},jd={$$typeof:!0,compare:!0,defaultProps:!0,displayName:!0,propTypes:!0,type:!0},bu={};bu[qu.ForwardRef]=Fm;bu[qu.Memo]=jd;function fs(e){return qu.isMemo(e)?jd:bu[e.$$typeof]||Mm}var Um=Object.defineProperty,Bm=Object.getOwnPropertyNames,ps=Object.getOwnPropertySymbols,Hm=Object.getOwnPropertyDescriptor,Vm=Object.getPrototypeOf,ms=Object.prototype;function Md(e,t,n){if(typeof t!="string"){if(ms){var r=Vm(t);r&&r!==ms&&Md(e,r,n)}var i=Bm(t);ps&&(i=i.concat(ps(t)));for(var l=fs(e),o=fs(t),u=0;u<i.length;++u){var a=i[u];if(!Dm[a]&&!(n&&n[a])&&!(o&&o[a])&&!(l&&l[a])){var c=Hm(t,a);try{Um(e,a,c)}catch{}}}}return e}var Wm=Md;function at(){return(at=Object.assign||function(e){for(var t=1;t<arguments.length;t++){var n=arguments[t];for(var r in n)Object.prototype.hasOwnProperty.call(n,r)&&(e[r]=n[r])}return e}).apply(this,arguments)}var hs=function(e,t){for(var n=[e[0]],r=0,i=t.length;r<i;r+=1)n.push(t[r],e[r+1]);return n},Zo=function(e){return e!==null&&typeof e=="object"&&(e.toString?e.toString():Object.prototype.toString.call(e))==="[object Object]"&&!Ir.typeOf(e)},Wi=Object.freeze([]),Wt=Object.freeze({});function Bn(e){return typeof e=="function"}function vs(e){return e.displayName||e.name||"Component"}function ea(e){return e&&typeof e.styledComponentId=="string"}var Hn=typeof process<"u"&&({}.REACT_APP_SC_ATTR||{}.SC_ATTR)||"data-styled",ta=typeof window<"u"&&"HTMLElement"in window,Qm=Boolean(typeof SC_DISABLE_SPEEDY=="boolean"?SC_DISABLE_SPEEDY:typeof process<"u"&&{}.REACT_APP_SC_DISABLE_SPEEDY!==void 0&&{}.REACT_APP_SC_DISABLE_SPEEDY!==""?{}.REACT_APP_SC_DISABLE_SPEEDY!=="false"&&{}.REACT_APP_SC_DISABLE_SPEEDY:typeof process<"u"&&{}.SC_DISABLE_SPEEDY!==void 0&&{}.SC_DISABLE_SPEEDY!==""?{}.SC_DISABLE_SPEEDY!=="false"&&{}.SC_DISABLE_SPEEDY:!1),Gm={};function sn(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];throw new Error("An error occurred. See https://git.io/JUIaE#"+e+" for more information."+(n.length>0?" Args: "+n.join(", "):""))}var Ym=function(){function e(n){this.groupSizes=new Uint32Array(512),this.length=512,this.tag=n}var t=e.prototype;return t.indexOfGroup=function(n){for(var r=0,i=0;i<n;i++)r+=this.groupSizes[i];return r},t.insertRules=function(n,r){if(n>=this.groupSizes.length){for(var i=this.groupSizes,l=i.length,o=l;n>=o;)(o<<=1)<0&&sn(16,""+n);this.groupSizes=new Uint32Array(o),this.groupSizes.set(i),this.length=o;for(var u=l;u<o;u++)this.groupSizes[u]=0}for(var a=this.indexOfGroup(n+1),c=0,h=r.length;c<h;c++)this.tag.insertRule(a,r[c])&&(this.groupSizes[n]++,a++)},t.clearGroup=function(n){if(n<this.length){var r=this.groupSizes[n],i=this.indexOfGroup(n),l=i+r;this.groupSizes[n]=0;for(var o=i;o<l;o++)this.tag.deleteRule(i)}},t.getGroup=function(n){var r="";if(n>=this.length||this.groupSizes[n]===0)return r;for(var i=this.groupSizes[n],l=this.indexOfGroup(n),o=l+i,u=l;u<o;u++)r+=this.tag.getRule(u)+`/*!sc*/
 `;return r},e}(),wi=new Map,Qi=new Map,hr=1,li=function(e){if(wi.has(e))return wi.get(e);for(;Qi.has(hr);)hr++;var t=hr++;return wi.set(e,t),Qi.set(t,e),t},Km=function(e){return Qi.get(e)},Xm=function(e,t){t>=hr&&(hr=t+1),wi.set(e,t),Qi.set(t,e)},Zm="style["+Hn+'][data-styled-version="5.3.6"]',Jm=new RegExp("^"+Hn+'\\.g(\\d+)\\[id="([\\w\\d-]+)"\\].*?"([^"]*)'),qm=function(e,t,n){for(var r,i=n.split(","),l=0,o=i.length;l<o;l++)(r=i[l])&&e.registerName(t,r)},bm=function(e,t){for(var n=(t.textContent||"").split(`/*!sc*/
 `),r=[],i=0,l=n.length;i<l;i++){var o=n[i].trim();if(o){var u=o.match(Jm);if(u){var a=0|parseInt(u[1],10),c=u[2];a!==0&&(Xm(c,a),qm(e,c,u[3]),e.getTag().insertRules(a,r)),r.length=0}else r.push(o)}}},eh=function(){return typeof __webpack_nonce__<"u"?__webpack_nonce__:null},Dd=function(e){var t=document.head,n=e||t,r=document.createElement("style"),i=function(u){for(var a=u.childNodes,c=a.length;c>=0;c--){var h=a[c];if(h&&h.nodeType===1&&h.hasAttribute(Hn))return h}}(n),l=i!==void 0?i.nextSibling:null;r.setAttribute(Hn,"active"),r.setAttribute("data-styled-version","5.3.6");var o=eh();return o&&r.setAttribute("nonce",o),n.insertBefore(r,l),r},th=function(){function e(n){var r=this.element=Dd(n);r.appendChild(document.createTextNode("")),this.sheet=function(i){if(i.sheet)return i.sheet;for(var l=document.styleSheets,o=0,u=l.length;o<u;o++){var a=l[o];if(a.ownerNode===i)return a}sn(17)}(r),this.length=0}var t=e.prototype;return t.insertRule=function(n,r){try{return this.sheet.insertRule(r,n),this.length++,!0}catch{return!1}},t.deleteRule=function(n){this.sheet.deleteRule(n),this.length--},t.getRule=function(n){var r=this.sheet.cssRules[n];return r!==void 0&&typeof r.cssText=="string"?r.cssText:""},e}(),nh=function(){function e(n){var r=this.element=Dd(n);this.nodes=r.childNodes,this.length=0}var t=e.prototype;return t.insertRule=function(n,r){if(n<=this.length&&n>=0){var i=document.createTextNode(r),l=this.nodes[n];return this.element.insertBefore(i,l||null),this.length++,!0}return!1},t.deleteRule=function(n){this.element.removeChild(this.nodes[n]),this.length--},t.getRule=function(n){return n<this.length?this.nodes[n].textContent:""},e}(),rh=function(){function e(n){this.rules=[],this.length=0}var t=e.prototype;return t.insertRule=function(n,r){return n<=this.length&&(this.rules.splice(n,0,r),this.length++,!0)},t.deleteRule=function(n){this.rules.splice(n,1),this.length--},t.getRule=function(n){return n<this.length?this.rules[n]:""},e}(),gs=ta,ih={isServer:!ta,useCSSOMInjection:!Qm},Gi=function(){function e(n,r,i){n===void 0&&(n=Wt),r===void 0&&(r={}),this.options=at({},ih,{},n),this.gs=r,this.names=new Map(i),this.server=!!n.isServer,!this.server&&ta&&gs&&(gs=!1,function(l){for(var o=document.querySelectorAll(Zm),u=0,a=o.length;u<a;u++){var c=o[u];c&&c.getAttribute(Hn)!=="active"&&(bm(l,c),c.parentNode&&c.parentNode.removeChild(c))}}(this))}e.registerId=function(n){return li(n)};var t=e.prototype;return t.reconstructWithOptions=function(n,r){return r===void 0&&(r=!0),new e(at({},this.options,{},n),this.gs,r&&this.names||void 0)},t.allocateGSInstance=function(n){return this.gs[n]=(this.gs[n]||0)+1},t.getTag=function(){return this.tag||(this.tag=(i=(r=this.options).isServer,l=r.useCSSOMInjection,o=r.target,n=i?new rh(o):l?new th(o):new nh(o),new Ym(n)));var n,r,i,l,o},t.hasNameForId=function(n,r){return this.names.has(n)&&this.names.get(n).has(r)},t.registerName=function(n,r){if(li(n),this.names.has(n))this.names.get(n).add(r);else{var i=new Set;i.add(r),this.names.set(n,i)}},t.insertRules=function(n,r,i){this.registerName(n,r),this.getTag().insertRules(li(n),i)},t.clearNames=function(n){this.names.has(n)&&this.names.get(n).clear()},t.clearRules=function(n){this.getTag().clearGroup(li(n)),this.clearNames(n)},t.clearTag=function(){this.tag=void 0},t.toString=function(){return function(n){for(var r=n.getTag(),i=r.length,l="",o=0;o<i;o++){var u=Km(o);if(u!==void 0){var a=n.names.get(u),c=r.getGroup(o);if(a&&c&&a.size){var h=Hn+".g"+o+'[id="'+u+'"]',m="";a!==void 0&&a.forEach(function(p){p.length>0&&(m+=p+",")}),l+=""+c+h+'{content:"'+m+`"}/*!sc*/
-`}}}return l}(this)},e}(),lh=/(a)(d)/gi,ys=function(e){return String.fromCharCode(e+(e>25?39:97))};function Jo(e){var t,n="";for(t=Math.abs(e);t>52;t=t/52|0)n=ys(t%52)+n;return(ys(t%52)+n).replace(lh,"$1-$2")}var zn=function(e,t){for(var n=t.length;n;)e=33*e^t.charCodeAt(--n);return e},Fd=function(e){return zn(5381,e)};function Ud(e){for(var t=0;t<e.length;t+=1){var n=e[t];if(Bn(n)&&!ea(n))return!1}return!0}var oh=Fd("5.3.6"),uh=function(){function e(t,n,r){this.rules=t,this.staticRulesId="",this.isStatic=(r===void 0||r.isStatic)&&Ud(t),this.componentId=n,this.baseHash=zn(oh,n),this.baseStyle=r,Gi.registerId(n)}return e.prototype.generateAndInjectStyles=function(t,n,r){var i=this.componentId,l=[];if(this.baseStyle&&l.push(this.baseStyle.generateAndInjectStyles(t,n,r)),this.isStatic&&!r.hash)if(this.staticRulesId&&n.hasNameForId(i,this.staticRulesId))l.push(this.staticRulesId);else{var o=cn(this.rules,t,n,r).join(""),u=Jo(zn(this.baseHash,o)>>>0);if(!n.hasNameForId(i,u)){var a=r(o,"."+u,void 0,i);n.insertRules(i,u,a)}l.push(u),this.staticRulesId=u}else{for(var c=this.rules.length,h=zn(this.baseHash,r.hash),m="",p=0;p<c;p++){var w=this.rules[p];if(typeof w=="string")m+=w;else if(w){var y=cn(w,t,n,r),S=Array.isArray(y)?y.join(""):y;h=zn(h,S+p),m+=S}}if(m){var L=Jo(h>>>0);if(!n.hasNameForId(i,L)){var d=r(m,"."+L,void 0,i);n.insertRules(i,L,d)}l.push(L)}}return l.join(" ")},e}(),ah=/^\s*\/\/.*$/gm,sh=[":","[",".","#"];function ch(e){var t,n,r,i,l=e===void 0?Wt:e,o=l.options,u=o===void 0?Wt:o,a=l.plugins,c=a===void 0?Wi:a,h=new Lm(u),m=[],p=function(S){function L(d){if(d)try{S(d+"}")}catch{}}return function(d,s,f,g,x,$,A,N,Q,D){switch(d){case 1:if(Q===0&&s.charCodeAt(0)===64)return S(s+";"),"";break;case 2:if(N===0)return s+"/*|*/";break;case 3:switch(N){case 102:case 112:return S(f[0]+s),"";default:return s+(D===0?"/*|*/":"")}case-2:s.split("/*|*/}").forEach(L)}}}(function(S){m.push(S)}),w=function(S,L,d){return L===0&&sh.indexOf(d[n.length])!==-1||d.match(i)?S:"."+t};function y(S,L,d,s){s===void 0&&(s="&");var f=S.replace(ah,""),g=L&&d?d+" "+L+" { "+f+" }":f;return t=s,n=L,r=new RegExp("\\"+n+"\\b","g"),i=new RegExp("(\\"+n+"\\b){2,}"),h(d||!L?"":L,g)}return h.use([].concat(c,[function(S,L,d){S===2&&d.length&&d[0].lastIndexOf(n)>0&&(d[0]=d[0].replace(r,w))},p,function(S){if(S===-2){var L=m;return m=[],L}}])),y.hash=c.length?c.reduce(function(S,L){return L.name||sn(15),zn(S,L.name)},5381).toString():"",y}var Bd=dn.createContext();Bd.Consumer;var Hd=dn.createContext(),dh=(Hd.Consumer,new Gi),qo=ch();function Vd(){return Ce.useContext(Bd)||dh}function Wd(){return Ce.useContext(Hd)||qo}var fh=function(){function e(t,n){var r=this;this.inject=function(i,l){l===void 0&&(l=qo);var o=r.name+l.hash;i.hasNameForId(r.id,o)||i.insertRules(r.id,o,l(r.rules,o,"@keyframes"))},this.toString=function(){return sn(12,String(r.name))},this.name=t,this.id="sc-keyframes-"+t,this.rules=n}return e.prototype.getName=function(t){return t===void 0&&(t=qo),this.name+t.hash},e}(),ph=/([A-Z])/,mh=/([A-Z])/g,hh=/^ms-/,vh=function(e){return"-"+e.toLowerCase()};function ws(e){return ph.test(e)?e.replace(mh,vh).replace(hh,"-ms-"):e}var Ss=function(e){return e==null||e===!1||e===""};function cn(e,t,n,r){if(Array.isArray(e)){for(var i,l=[],o=0,u=e.length;o<u;o+=1)(i=cn(e[o],t,n,r))!==""&&(Array.isArray(i)?l.push.apply(l,i):l.push(i));return l}if(Ss(e))return"";if(ea(e))return"."+e.styledComponentId;if(Bn(e)){if(typeof(c=e)!="function"||c.prototype&&c.prototype.isReactComponent||!t)return e;var a=e(t);return cn(a,t,n,r)}var c;return e instanceof fh?n?(e.inject(n,r),e.getName(r)):e:Zo(e)?function h(m,p){var w,y,S=[];for(var L in m)m.hasOwnProperty(L)&&!Ss(m[L])&&(Array.isArray(m[L])&&m[L].isCss||Bn(m[L])?S.push(ws(L)+":",m[L],";"):Zo(m[L])?S.push.apply(S,h(m[L],L)):S.push(ws(L)+": "+(w=L,(y=m[L])==null||typeof y=="boolean"||y===""?"":typeof y!="number"||y===0||w in Im?String(y).trim():y+"px")+";"));return p?[p+" {"].concat(S,["}"]):S}(e):e.toString()}var ks=function(e){return Array.isArray(e)&&(e.isCss=!0),e};function Qd(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];return Bn(e)||Zo(e)?ks(cn(hs(Wi,[e].concat(n)))):n.length===0&&e.length===1&&typeof e[0]=="string"?e:ks(cn(hs(e,n)))}var Gd=function(e,t,n){return n===void 0&&(n=Wt),e.theme!==n.theme&&e.theme||t||n.theme},gh=/[!"#$%&'()*+,./:;<=>?@[\\\]^`{|}~-]+/g,yh=/(^-|-$)/g;function Kl(e){return e.replace(gh,"-").replace(yh,"")}var Yd=function(e){return Jo(Fd(e)>>>0)};function oi(e){return typeof e=="string"&&!0}var bo=function(e){return typeof e=="function"||typeof e=="object"&&e!==null&&!Array.isArray(e)},wh=function(e){return e!=="__proto__"&&e!=="constructor"&&e!=="prototype"};function Sh(e,t,n){var r=e[n];bo(t)&&bo(r)?Kd(r,t):e[n]=t}function Kd(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];for(var i=0,l=n;i<l.length;i++){var o=l[i];if(bo(o))for(var u in o)wh(u)&&Sh(e,o[u],u)}return e}var Or=dn.createContext();Or.Consumer;function kh(e){var t=Ce.useContext(Or),n=Ce.useMemo(function(){return function(r,i){if(!r)return sn(14);if(Bn(r)){var l=r(i);return l}return Array.isArray(r)||typeof r!="object"?sn(8):i?at({},i,{},r):r}(e.theme,t)},[e.theme,t]);return e.children?dn.createElement(Or.Provider,{value:n},e.children):null}var Xl={};function Xd(e,t,n){var r=ea(e),i=!oi(e),l=t.attrs,o=l===void 0?Wi:l,u=t.componentId,a=u===void 0?function(s,f){var g=typeof s!="string"?"sc":Kl(s);Xl[g]=(Xl[g]||0)+1;var x=g+"-"+Yd("5.3.6"+g+Xl[g]);return f?f+"-"+x:x}(t.displayName,t.parentComponentId):u,c=t.displayName,h=c===void 0?function(s){return oi(s)?"styled."+s:"Styled("+vs(s)+")"}(e):c,m=t.displayName&&t.componentId?Kl(t.displayName)+"-"+t.componentId:t.componentId||a,p=r&&e.attrs?Array.prototype.concat(e.attrs,o).filter(Boolean):o,w=t.shouldForwardProp;r&&e.shouldForwardProp&&(w=t.shouldForwardProp?function(s,f,g){return e.shouldForwardProp(s,f,g)&&t.shouldForwardProp(s,f,g)}:e.shouldForwardProp);var y,S=new uh(n,m,r?e.componentStyle:void 0),L=S.isStatic&&o.length===0,d=function(s,f){return function(g,x,$,A){var N=g.attrs,Q=g.componentStyle,D=g.defaultProps,me=g.foldedComponentIds,de=g.shouldForwardProp,ye=g.styledComponentId,Ve=g.target,Pe=function(M,v,V){M===void 0&&(M=Wt);var E=at({},v,{theme:M}),oe={};return V.forEach(function(Y){var X,U,we,Me=Y;for(X in Bn(Me)&&(Me=Me(E)),Me)E[X]=oe[X]=X==="className"?(U=oe[X],we=Me[X],U&&we?U+" "+we:U||we):Me[X]}),[E,oe]}(Gd(x,Ce.useContext(Or),D)||Wt,x,N),gt=Pe[0],Ae=Pe[1],C=function(M,v,V,E){var oe=Vd(),Y=Wd(),X=v?M.generateAndInjectStyles(Wt,oe,Y):M.generateAndInjectStyles(V,oe,Y);return X}(Q,A,gt),O=$,j=Ae.$as||x.$as||Ae.as||x.as||Ve,q=oi(j),_=Ae!==x?at({},x,{},Ae):x,z={};for(var T in _)T[0]!=="$"&&T!=="as"&&(T==="forwardedAs"?z.as=_[T]:(de?de(T,ds,j):!q||ds(T))&&(z[T]=_[T]));return x.style&&Ae.style!==x.style&&(z.style=at({},x.style,{},Ae.style)),z.className=Array.prototype.concat(me,ye,C!==ye?C:null,x.className,Ae.className).filter(Boolean).join(" "),z.ref=O,Ce.createElement(j,z)}(y,s,f,L)};return d.displayName=h,(y=dn.forwardRef(d)).attrs=p,y.componentStyle=S,y.displayName=h,y.shouldForwardProp=w,y.foldedComponentIds=r?Array.prototype.concat(e.foldedComponentIds,e.styledComponentId):Wi,y.styledComponentId=m,y.target=r?e.target:e,y.withComponent=function(s){var f=t.componentId,g=function($,A){if($==null)return{};var N,Q,D={},me=Object.keys($);for(Q=0;Q<me.length;Q++)N=me[Q],A.indexOf(N)>=0||(D[N]=$[N]);return D}(t,["componentId"]),x=f&&f+"-"+(oi(s)?s:Kl(vs(s)));return Xd(s,at({},g,{attrs:p,componentId:x}),n)},Object.defineProperty(y,"defaultProps",{get:function(){return this._foldedDefaultProps},set:function(s){this._foldedDefaultProps=r?Kd({},e.defaultProps,s):s}}),y.toString=function(){return"."+y.styledComponentId},i&&Wm(y,e,{attrs:!0,componentStyle:!0,displayName:!0,foldedComponentIds:!0,shouldForwardProp:!0,styledComponentId:!0,target:!0,withComponent:!0}),y}var eu=function(e){return function t(n,r,i){if(i===void 0&&(i=Wt),!Ir.isValidElementType(r))return sn(1,String(r));var l=function(){return n(r,i,Qd.apply(void 0,arguments))};return l.withConfig=function(o){return t(n,r,at({},i,{},o))},l.attrs=function(o){return t(n,r,at({},i,{attrs:Array.prototype.concat(i.attrs,o).filter(Boolean)}))},l}(Xd,e)};["a","abbr","address","area","article","aside","audio","b","base","bdi","bdo","big","blockquote","body","br","button","canvas","caption","cite","code","col","colgroup","data","datalist","dd","del","details","dfn","dialog","div","dl","dt","em","embed","fieldset","figcaption","figure","footer","form","h1","h2","h3","h4","h5","h6","head","header","hgroup","hr","html","i","iframe","img","input","ins","kbd","keygen","label","legend","li","link","main","map","mark","marquee","menu","menuitem","meta","meter","nav","noscript","object","ol","optgroup","option","output","p","param","picture","pre","progress","q","rp","rt","ruby","s","samp","script","section","select","small","source","span","strong","style","sub","summary","sup","table","tbody","td","textarea","tfoot","th","thead","time","title","tr","track","u","ul","var","video","wbr","circle","clipPath","defs","ellipse","foreignObject","g","image","line","linearGradient","marker","mask","path","pattern","polygon","polyline","radialGradient","rect","stop","svg","text","textPath","tspan"].forEach(function(e){eu[e]=eu(e)});var xh=function(){function e(n,r){this.rules=n,this.componentId=r,this.isStatic=Ud(n),Gi.registerId(this.componentId+1)}var t=e.prototype;return t.createStyles=function(n,r,i,l){var o=l(cn(this.rules,r,i,l).join(""),""),u=this.componentId+n;i.insertRules(u,u,o)},t.removeStyles=function(n,r){r.clearRules(this.componentId+n)},t.renderStyles=function(n,r,i,l){n>2&&Gi.registerId(this.componentId+n),this.removeStyles(n,i),this.createStyles(n,r,i,l)},e}();function Ch(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];var i=Qd.apply(void 0,[e].concat(n)),l="sc-global-"+Yd(JSON.stringify(i)),o=new xh(i,l);function u(c){var h=Vd(),m=Wd(),p=Ce.useContext(Or),w=Ce.useRef(h.allocateGSInstance(l)).current;return h.server&&a(w,c,h,p,m),Ce.useLayoutEffect(function(){if(!h.server)return a(w,c,h,p,m),function(){return o.removeStyles(w,h)}},[w,c,h,p,m]),null}function a(c,h,m,p,w){if(o.isStatic)o.renderStyles(c,Gm,m,w);else{var y=at({},h,{theme:Gd(h,p,u.defaultProps)});o.renderStyles(c,y,m,w)}}return dn.memo(u)}const I=eu,Eh={historia:['Esta compañía nace por la necesidad de trabajo y empeño de un grupo de colaboradores quienes un 3 de octubre de 2006, motivados por el deseo de cumplir un sueño, buscan emprender en el mundo de la transportación pesada creando un logotipo inicial de "TRANSPORTE GALLITO" nombre que daría inicio al nacimiento de algo más grande, por medio del cual ingresamos a muchas empresas de renombre, quienes nos dieron la oportunidad de ejercer nuestras aspiraciones de crecimiento personal, familiar y profesional de manera honrada y responsable.','Gracias a Dios y a nuestros fieles clientes que creyeron en nuestras capacidades, habilidades y destrezas, a mediados del 2013, nace la compañía jurídica familiar cuyo nombre es "GALLOEXPRE C.A." más sólida pues somos un equipo que busca seguir creciendo para cumplir las expectativas de nuestros clientes y de la compañía en general. Teniendo como principal objetivo ser útil y servir a la sociedad de manera honrada y responsable.'],info:[{name:"Misión",description:"Ofrecer un servicio de transporte de excelencia, calidad y oportunidad de trabajo para la sociedad, basado en la satisfacción de las necesidades  de nuestros clientes. Capacitando permanentemente a nuestro personal para brindar un servicio  rápido y competitivo. Operando en forma eficiente, segura y con tecnología de punta.",background:"../src/assets/6.webp"},{name:"Visión",description:"Ser una de las empresas líder de carga pesada a nivel nacional, ofreciendo servicios integrales, seguros y de calidad a cada una de nuestras Empresas, así como también cumplir con los sueños de sus miembros a fin de lograr cada una de sus metas y ser útiles a la sociedad en general.",background:"../src/assets/7.webp"}]},_h=[{description:"Transporte nuevo, tipo furgones de toda medida.",icon:"truck"},{description:"Plataformas y tráiler para peso liviano y extra pesado.",icon:"luggage-cart"},{description:"Unidades de transporte con rastreo satelital.",icon:"wifi"},{description:"Camiones para peso más liviano.",icon:"truck"},{description:"Personal altamente capacitado para la manipulación responsable de su mercadería.",icon:"users-alt"},{description:"Disponemos de Instalaciones propias en las ciudades de Quito y Guayaquil",icon:"building"}],Ph=[{ciudad:"Quito",direccion:"Chillogallo Santa Rita, Apuela S27-123 y Agustín Miranda.",celular:"099 243 4904",correo:"asesor1@galloexpre.com",map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.4428355171453!2d-78.54829247077545!3d-0.2780417588982699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5990da608fcd3%3A0x5e45f4d29929d32f!2sCompa%C3%B1%C3%ADa%20de%20Transporte%20Pesado%20Galloexpre%20C.A.!5e0!3m2!1ses!2sec!4v1674057721145!5m2!1ses!2sec"},{ciudad:"Guayaquil",direccion:'Cooperativa de vivienda de los Empleados de la Ilustre Municipalidad de Guayaquil "COVIEM" Mz.50, Solar 14.',celular:"098 533 2376",correo:"asesor2@galloexpre.com",map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.7771851785483!2d-79.90410539939339!3d-2.2372088121503544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMTQnMTQuMCJTIDc5wrA1NCcxMC4xIlc!5e0!3m2!1ses-419!2sec!4v1537216473794"}],Yi={nosotros:Eh,servicios:_h,direccion:Ph},zh=I.section`
+`}}}return l}(this)},e}(),lh=/(a)(d)/gi,ys=function(e){return String.fromCharCode(e+(e>25?39:97))};function Jo(e){var t,n="";for(t=Math.abs(e);t>52;t=t/52|0)n=ys(t%52)+n;return(ys(t%52)+n).replace(lh,"$1-$2")}var zn=function(e,t){for(var n=t.length;n;)e=33*e^t.charCodeAt(--n);return e},Fd=function(e){return zn(5381,e)};function Ud(e){for(var t=0;t<e.length;t+=1){var n=e[t];if(Bn(n)&&!ea(n))return!1}return!0}var oh=Fd("5.3.6"),uh=function(){function e(t,n,r){this.rules=t,this.staticRulesId="",this.isStatic=(r===void 0||r.isStatic)&&Ud(t),this.componentId=n,this.baseHash=zn(oh,n),this.baseStyle=r,Gi.registerId(n)}return e.prototype.generateAndInjectStyles=function(t,n,r){var i=this.componentId,l=[];if(this.baseStyle&&l.push(this.baseStyle.generateAndInjectStyles(t,n,r)),this.isStatic&&!r.hash)if(this.staticRulesId&&n.hasNameForId(i,this.staticRulesId))l.push(this.staticRulesId);else{var o=cn(this.rules,t,n,r).join(""),u=Jo(zn(this.baseHash,o)>>>0);if(!n.hasNameForId(i,u)){var a=r(o,"."+u,void 0,i);n.insertRules(i,u,a)}l.push(u),this.staticRulesId=u}else{for(var c=this.rules.length,h=zn(this.baseHash,r.hash),m="",p=0;p<c;p++){var w=this.rules[p];if(typeof w=="string")m+=w;else if(w){var y=cn(w,t,n,r),S=Array.isArray(y)?y.join(""):y;h=zn(h,S+p),m+=S}}if(m){var L=Jo(h>>>0);if(!n.hasNameForId(i,L)){var d=r(m,"."+L,void 0,i);n.insertRules(i,L,d)}l.push(L)}}return l.join(" ")},e}(),ah=/^\s*\/\/.*$/gm,sh=[":","[",".","#"];function ch(e){var t,n,r,i,l=e===void 0?Wt:e,o=l.options,u=o===void 0?Wt:o,a=l.plugins,c=a===void 0?Wi:a,h=new Lm(u),m=[],p=function(S){function L(d){if(d)try{S(d+"}")}catch{}}return function(d,s,f,g,x,$,A,N,Q,D){switch(d){case 1:if(Q===0&&s.charCodeAt(0)===64)return S(s+";"),"";break;case 2:if(N===0)return s+"/*|*/";break;case 3:switch(N){case 102:case 112:return S(f[0]+s),"";default:return s+(D===0?"/*|*/":"")}case-2:s.split("/*|*/}").forEach(L)}}}(function(S){m.push(S)}),w=function(S,L,d){return L===0&&sh.indexOf(d[n.length])!==-1||d.match(i)?S:"."+t};function y(S,L,d,s){s===void 0&&(s="&");var f=S.replace(ah,""),g=L&&d?d+" "+L+" { "+f+" }":f;return t=s,n=L,r=new RegExp("\\"+n+"\\b","g"),i=new RegExp("(\\"+n+"\\b){2,}"),h(d||!L?"":L,g)}return h.use([].concat(c,[function(S,L,d){S===2&&d.length&&d[0].lastIndexOf(n)>0&&(d[0]=d[0].replace(r,w))},p,function(S){if(S===-2){var L=m;return m=[],L}}])),y.hash=c.length?c.reduce(function(S,L){return L.name||sn(15),zn(S,L.name)},5381).toString():"",y}var Bd=dn.createContext();Bd.Consumer;var Hd=dn.createContext(),dh=(Hd.Consumer,new Gi),qo=ch();function Vd(){return Ce.useContext(Bd)||dh}function Wd(){return Ce.useContext(Hd)||qo}var fh=function(){function e(t,n){var r=this;this.inject=function(i,l){l===void 0&&(l=qo);var o=r.name+l.hash;i.hasNameForId(r.id,o)||i.insertRules(r.id,o,l(r.rules,o,"@keyframes"))},this.toString=function(){return sn(12,String(r.name))},this.name=t,this.id="sc-keyframes-"+t,this.rules=n}return e.prototype.getName=function(t){return t===void 0&&(t=qo),this.name+t.hash},e}(),ph=/([A-Z])/,mh=/([A-Z])/g,hh=/^ms-/,vh=function(e){return"-"+e.toLowerCase()};function ws(e){return ph.test(e)?e.replace(mh,vh).replace(hh,"-ms-"):e}var Ss=function(e){return e==null||e===!1||e===""};function cn(e,t,n,r){if(Array.isArray(e)){for(var i,l=[],o=0,u=e.length;o<u;o+=1)(i=cn(e[o],t,n,r))!==""&&(Array.isArray(i)?l.push.apply(l,i):l.push(i));return l}if(Ss(e))return"";if(ea(e))return"."+e.styledComponentId;if(Bn(e)){if(typeof(c=e)!="function"||c.prototype&&c.prototype.isReactComponent||!t)return e;var a=e(t);return cn(a,t,n,r)}var c;return e instanceof fh?n?(e.inject(n,r),e.getName(r)):e:Zo(e)?function h(m,p){var w,y,S=[];for(var L in m)m.hasOwnProperty(L)&&!Ss(m[L])&&(Array.isArray(m[L])&&m[L].isCss||Bn(m[L])?S.push(ws(L)+":",m[L],";"):Zo(m[L])?S.push.apply(S,h(m[L],L)):S.push(ws(L)+": "+(w=L,(y=m[L])==null||typeof y=="boolean"||y===""?"":typeof y!="number"||y===0||w in Im?String(y).trim():y+"px")+";"));return p?[p+" {"].concat(S,["}"]):S}(e):e.toString()}var ks=function(e){return Array.isArray(e)&&(e.isCss=!0),e};function Qd(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];return Bn(e)||Zo(e)?ks(cn(hs(Wi,[e].concat(n)))):n.length===0&&e.length===1&&typeof e[0]=="string"?e:ks(cn(hs(e,n)))}var Gd=function(e,t,n){return n===void 0&&(n=Wt),e.theme!==n.theme&&e.theme||t||n.theme},gh=/[!"#$%&'()*+,./:;<=>?@[\\\]^`{|}~-]+/g,yh=/(^-|-$)/g;function Kl(e){return e.replace(gh,"-").replace(yh,"")}var Yd=function(e){return Jo(Fd(e)>>>0)};function oi(e){return typeof e=="string"&&!0}var bo=function(e){return typeof e=="function"||typeof e=="object"&&e!==null&&!Array.isArray(e)},wh=function(e){return e!=="__proto__"&&e!=="constructor"&&e!=="prototype"};function Sh(e,t,n){var r=e[n];bo(t)&&bo(r)?Kd(r,t):e[n]=t}function Kd(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];for(var i=0,l=n;i<l.length;i++){var o=l[i];if(bo(o))for(var u in o)wh(u)&&Sh(e,o[u],u)}return e}var Or=dn.createContext();Or.Consumer;function kh(e){var t=Ce.useContext(Or),n=Ce.useMemo(function(){return function(r,i){if(!r)return sn(14);if(Bn(r)){var l=r(i);return l}return Array.isArray(r)||typeof r!="object"?sn(8):i?at({},i,{},r):r}(e.theme,t)},[e.theme,t]);return e.children?dn.createElement(Or.Provider,{value:n},e.children):null}var Xl={};function Xd(e,t,n){var r=ea(e),i=!oi(e),l=t.attrs,o=l===void 0?Wi:l,u=t.componentId,a=u===void 0?function(s,f){var g=typeof s!="string"?"sc":Kl(s);Xl[g]=(Xl[g]||0)+1;var x=g+"-"+Yd("5.3.6"+g+Xl[g]);return f?f+"-"+x:x}(t.displayName,t.parentComponentId):u,c=t.displayName,h=c===void 0?function(s){return oi(s)?"styled."+s:"Styled("+vs(s)+")"}(e):c,m=t.displayName&&t.componentId?Kl(t.displayName)+"-"+t.componentId:t.componentId||a,p=r&&e.attrs?Array.prototype.concat(e.attrs,o).filter(Boolean):o,w=t.shouldForwardProp;r&&e.shouldForwardProp&&(w=t.shouldForwardProp?function(s,f,g){return e.shouldForwardProp(s,f,g)&&t.shouldForwardProp(s,f,g)}:e.shouldForwardProp);var y,S=new uh(n,m,r?e.componentStyle:void 0),L=S.isStatic&&o.length===0,d=function(s,f){return function(g,x,$,A){var N=g.attrs,Q=g.componentStyle,D=g.defaultProps,me=g.foldedComponentIds,de=g.shouldForwardProp,ye=g.styledComponentId,Ve=g.target,Pe=function(M,v,V){M===void 0&&(M=Wt);var E=at({},v,{theme:M}),oe={};return V.forEach(function(Y){var X,U,we,Me=Y;for(X in Bn(Me)&&(Me=Me(E)),Me)E[X]=oe[X]=X==="className"?(U=oe[X],we=Me[X],U&&we?U+" "+we:U||we):Me[X]}),[E,oe]}(Gd(x,Ce.useContext(Or),D)||Wt,x,N),gt=Pe[0],Ae=Pe[1],C=function(M,v,V,E){var oe=Vd(),Y=Wd(),X=v?M.generateAndInjectStyles(Wt,oe,Y):M.generateAndInjectStyles(V,oe,Y);return X}(Q,A,gt),O=$,j=Ae.$as||x.$as||Ae.as||x.as||Ve,q=oi(j),_=Ae!==x?at({},x,{},Ae):x,z={};for(var T in _)T[0]!=="$"&&T!=="as"&&(T==="forwardedAs"?z.as=_[T]:(de?de(T,ds,j):!q||ds(T))&&(z[T]=_[T]));return x.style&&Ae.style!==x.style&&(z.style=at({},x.style,{},Ae.style)),z.className=Array.prototype.concat(me,ye,C!==ye?C:null,x.className,Ae.className).filter(Boolean).join(" "),z.ref=O,Ce.createElement(j,z)}(y,s,f,L)};return d.displayName=h,(y=dn.forwardRef(d)).attrs=p,y.componentStyle=S,y.displayName=h,y.shouldForwardProp=w,y.foldedComponentIds=r?Array.prototype.concat(e.foldedComponentIds,e.styledComponentId):Wi,y.styledComponentId=m,y.target=r?e.target:e,y.withComponent=function(s){var f=t.componentId,g=function($,A){if($==null)return{};var N,Q,D={},me=Object.keys($);for(Q=0;Q<me.length;Q++)N=me[Q],A.indexOf(N)>=0||(D[N]=$[N]);return D}(t,["componentId"]),x=f&&f+"-"+(oi(s)?s:Kl(vs(s)));return Xd(s,at({},g,{attrs:p,componentId:x}),n)},Object.defineProperty(y,"defaultProps",{get:function(){return this._foldedDefaultProps},set:function(s){this._foldedDefaultProps=r?Kd({},e.defaultProps,s):s}}),y.toString=function(){return"."+y.styledComponentId},i&&Wm(y,e,{attrs:!0,componentStyle:!0,displayName:!0,foldedComponentIds:!0,shouldForwardProp:!0,styledComponentId:!0,target:!0,withComponent:!0}),y}var eu=function(e){return function t(n,r,i){if(i===void 0&&(i=Wt),!Ir.isValidElementType(r))return sn(1,String(r));var l=function(){return n(r,i,Qd.apply(void 0,arguments))};return l.withConfig=function(o){return t(n,r,at({},i,{},o))},l.attrs=function(o){return t(n,r,at({},i,{attrs:Array.prototype.concat(i.attrs,o).filter(Boolean)}))},l}(Xd,e)};["a","abbr","address","area","article","aside","audio","b","base","bdi","bdo","big","blockquote","body","br","button","canvas","caption","cite","code","col","colgroup","data","datalist","dd","del","details","dfn","dialog","div","dl","dt","em","embed","fieldset","figcaption","figure","footer","form","h1","h2","h3","h4","h5","h6","head","header","hgroup","hr","html","i","iframe","img","input","ins","kbd","keygen","label","legend","li","link","main","map","mark","marquee","menu","menuitem","meta","meter","nav","noscript","object","ol","optgroup","option","output","p","param","picture","pre","progress","q","rp","rt","ruby","s","samp","script","section","select","small","source","span","strong","style","sub","summary","sup","table","tbody","td","textarea","tfoot","th","thead","time","title","tr","track","u","ul","var","video","wbr","circle","clipPath","defs","ellipse","foreignObject","g","image","line","linearGradient","marker","mask","path","pattern","polygon","polyline","radialGradient","rect","stop","svg","text","textPath","tspan"].forEach(function(e){eu[e]=eu(e)});var xh=function(){function e(n,r){this.rules=n,this.componentId=r,this.isStatic=Ud(n),Gi.registerId(this.componentId+1)}var t=e.prototype;return t.createStyles=function(n,r,i,l){var o=l(cn(this.rules,r,i,l).join(""),""),u=this.componentId+n;i.insertRules(u,u,o)},t.removeStyles=function(n,r){r.clearRules(this.componentId+n)},t.renderStyles=function(n,r,i,l){n>2&&Gi.registerId(this.componentId+n),this.removeStyles(n,i),this.createStyles(n,r,i,l)},e}();function Ch(e){for(var t=arguments.length,n=new Array(t>1?t-1:0),r=1;r<t;r++)n[r-1]=arguments[r];var i=Qd.apply(void 0,[e].concat(n)),l="sc-global-"+Yd(JSON.stringify(i)),o=new xh(i,l);function u(c){var h=Vd(),m=Wd(),p=Ce.useContext(Or),w=Ce.useRef(h.allocateGSInstance(l)).current;return h.server&&a(w,c,h,p,m),Ce.useLayoutEffect(function(){if(!h.server)return a(w,c,h,p,m),function(){return o.removeStyles(w,h)}},[w,c,h,p,m]),null}function a(c,h,m,p,w){if(o.isStatic)o.renderStyles(c,Gm,m,w);else{var y=at({},h,{theme:Gd(h,p,u.defaultProps)});o.renderStyles(c,y,m,w)}}return dn.memo(u)}const I=eu,Eh={historia:['Esta compañía nace por la necesidad de trabajo y empeño de un grupo de colaboradores quienes un 3 de octubre de 2006, motivados por el deseo de cumplir un sueño, buscan emprender en el mundo de la transportación pesada creando un logotipo inicial de "TRANSPORTE GALLITO" nombre que daría inicio al nacimiento de algo más grande, por medio del cual ingresamos a muchas empresas de renombre, quienes nos dieron la oportunidad de ejercer nuestras aspiraciones de crecimiento personal, familiar y profesional de manera honrada y responsable.','Gracias a Dios y a nuestros fieles clientes que creyeron en nuestras capacidades, habilidades y destrezas, a mediados del 2013, nace la compañía jurídica familiar cuyo nombre es "GALLOEXPRE C.A." más sólida pues somos un equipo que busca seguir creciendo para cumplir las expectativas de nuestros clientes y de la compañía en general. Teniendo como principal objetivo ser útil y servir a la sociedad de manera honrada y responsable.'],info:[{name:"Misión",description:"Ofrecer un servicio de transporte de excelencia, calidad y oportunidad de trabajo para la sociedad, basado en la satisfacción de las necesidades  de nuestros clientes. Capacitando permanentemente a nuestro personal para brindar un servicio  rápido y competitivo. Operando en forma eficiente, segura y con tecnología de punta."},{name:"Visión",description:"Ser una de las empresas líder de carga pesada a nivel nacional, ofreciendo servicios integrales, seguros y de calidad a cada una de nuestras Empresas, así como también cumplir con los sueños de sus miembros a fin de lograr cada una de sus metas y ser útiles a la sociedad en general."}]},_h=[{description:"Transporte nuevo, tipo furgones de toda medida.",icon:"truck"},{description:"Plataformas y tráiler para peso liviano y extra pesado.",icon:"luggage-cart"},{description:"Unidades de transporte con rastreo satelital.",icon:"wifi"},{description:"Camiones para peso más liviano.",icon:"truck"},{description:"Personal altamente capacitado para la manipulación responsable de su mercadería.",icon:"users-alt"},{description:"Disponemos de Instalaciones propias en las ciudades de Quito y Guayaquil",icon:"building"}],Ph=[{ciudad:"Quito",direccion:"Chillogallo Santa Rita, Apuela S27-123 y Agustín Miranda.",celular:"099 243 4904",correo:"asesor1@galloexpre.com",map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d997.4428355171453!2d-78.54829247077545!3d-0.2780417588982699!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d5990da608fcd3%3A0x5e45f4d29929d32f!2sCompa%C3%B1%C3%ADa%20de%20Transporte%20Pesado%20Galloexpre%20C.A.!5e0!3m2!1ses!2sec!4v1674057721145!5m2!1ses!2sec"},{ciudad:"Guayaquil",direccion:'Cooperativa de vivienda de los Empleados de la Ilustre Municipalidad de Guayaquil "COVIEM" Mz.50, Solar 14.',celular:"098 533 2376",correo:"asesor2@galloexpre.com",map:"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.7771851785483!2d-79.90410539939339!3d-2.2372088121503544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMTQnMTQuMCJTIDc5wrA1NCcxMC4xIlc!5e0!3m2!1ses-419!2sec!4v1537216473794"}],Yi={nosotros:Eh,servicios:_h,direccion:Ph},zh="/galloexpre/assets/6-7ec2f5f9.webp",$h="/galloexpre/assets/7-a931e3cc.webp",Nh=I.section`
   display: flex;
   gap: 2rem;
   align-items: flex-start;
@@ -65,9 +65,9 @@ Error generating stack: `+l.message+`
   @media screen and (max-width: 480px) {
     padding: 3rem 1rem;
   }
-`,$h=I.h2`
+`,Th=I.h2`
   font-size: 2rem;
-`,Nh=I.div`
+`,Rh=I.div`
   display: flex;
   align-items: center;
   gap: 4rem;
@@ -75,17 +75,17 @@ Error generating stack: `+l.message+`
     flex-wrap: wrap;
     justify-content: center;
   }
-`,Th=I.article`
+`,Ah=I.article`
   max-width: 50ch;
   display: flex;
   flex-direction: column;
   gap: 1rem;
-`,Rh=I.div`
+`,Lh=I.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 4rem;
-`,Ah=I.article`
+`,Ih=I.article`
   max-width: 50ch;
   display: flex;
   flex-direction: column;
@@ -93,23 +93,23 @@ Error generating stack: `+l.message+`
   background-color: ${e=>e.theme.Background2};
   padding: 2rem;
   border-radius: 2rem;
-  background-image: url(${e=>e.background});
+  background-image: url(${e=>e.name==="Misión"?zh:$h});
   background-size: cover;
   background-blend-mode: soft-light;
-`,Lh=I.h3`
+`,Oh=I.h3`
   font-size: 1.4rem;
   color: ${e=>e.theme.Title};
 `,xs=I.span`
   color: ${e=>e.theme.Title};
   font-weight: bold;
-`;function Ih(){return B(zh,{id:"nosotros",children:[P($h,{children:"Quiénes somos"}),B(Nh,{children:[B(Th,{children:[B("p",{children:["Esta compañía nace por la necesidad de trabajo y empeño de un grupo de colaboradores quienes un 3 de octubre de 2006, motivados por el deseo de cumplir un sueño, buscan emprender en el mundo de la transportación pesada creando un logotipo inicial de"," ",P(xs,{children:'"TRANSPORTE GALLITO"'})," nombre que daría inicio al nacimiento de algo más grande, por medio del cual ingresamos a muchas empresas de renombre, quienes nos dieron la oportunidad de ejercer nuestras aspiraciones de crecimiento personal, familiar y profesional de manera honrada y responsable."]}),B("p",{children:["Gracias a Dios y a nuestros fieles clientes que creyeron en nuestras capacidades, habilidades y destrezas, a mediados del 2013, nace la compañía jurídica familiar cuyo nombre es"," ",P(xs,{children:'"GALLOEXPRE C.A."'})," más sólida pues somos un equipo que busca seguir creciendo para cumplir las expectativas de nuestros clientes y de la compañía en general. Teniendo como principal objetivo ser útil y servir a la sociedad de manera honrada y responsable."]})]}),P(Rh,{children:Yi.nosotros.info.map((e,t)=>B(Ah,{background:e.background,children:[P(Lh,{children:e.name}),P("p",{children:e.description})]},t))})]})]})}const Oh=I.div`
+`;function jh(){return B(Nh,{id:"nosotros",children:[P(Th,{children:"Quiénes somos"}),B(Rh,{children:[B(Ah,{children:[B("p",{children:["Esta compañía nace por la necesidad de trabajo y empeño de un grupo de colaboradores quienes un 3 de octubre de 2006, motivados por el deseo de cumplir un sueño, buscan emprender en el mundo de la transportación pesada creando un logotipo inicial de"," ",P(xs,{children:'"TRANSPORTE GALLITO"'})," nombre que daría inicio al nacimiento de algo más grande, por medio del cual ingresamos a muchas empresas de renombre, quienes nos dieron la oportunidad de ejercer nuestras aspiraciones de crecimiento personal, familiar y profesional de manera honrada y responsable."]}),B("p",{children:["Gracias a Dios y a nuestros fieles clientes que creyeron en nuestras capacidades, habilidades y destrezas, a mediados del 2013, nace la compañía jurídica familiar cuyo nombre es"," ",P(xs,{children:'"GALLOEXPRE C.A."'})," más sólida pues somos un equipo que busca seguir creciendo para cumplir las expectativas de nuestros clientes y de la compañía en general. Teniendo como principal objetivo ser útil y servir a la sociedad de manera honrada y responsable."]})]}),P(Lh,{children:Yi.nosotros.info.map((e,t)=>B(Ih,{name:e.name,children:[P(Oh,{children:e.name}),P("p",{children:e.description})]},t))})]})]})}const Mh=I.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-`,jh=I.h3`
+`,Dh=I.h3`
   color: ${e=>e.theme.Title};
-`,Mh=I.ul`
+`,Fh=I.ul`
   max-width: 50ch;
   display: flex;
   flex-direction: column;
@@ -120,7 +120,7 @@ Error generating stack: `+l.message+`
 `,Jl=I.i`
   font-size: 1.5rem;
   color: #ff0000;
-`,Dh=I.iframe`
+`,Uh=I.iframe`
   width: 400px;
   height: 300px;
   border: 0;
@@ -128,11 +128,11 @@ Error generating stack: `+l.message+`
     width: 300px;
     height: 200px;
   }
-`;function Cs({ciudad:e,direccion:t,celular:n,email:r,map:i}){return B(Oh,{children:[P(jh,{children:e}),B(Mh,{children:[B(Zl,{children:[P(Jl,{className:"uil uil-map-marker"}),t]}),B(Zl,{children:[P(Jl,{className:"uil uil-phone-alt"}),n]}),B(Zl,{children:[P(Jl,{className:"uil uil-envelope-alt"}),r]})]}),P(Dh,{src:i,allowFullScreen:"",loading:"lazy",referrerPolicy:"no-referrer-when-downgrade",title:"Ubicación de las oficinas de GalloExpre en Ecuador"})]})}const Fh=I.div`
+`;function Cs({ciudad:e,direccion:t,celular:n,email:r,map:i}){return B(Mh,{children:[P(Dh,{children:e}),B(Fh,{children:[B(Zl,{children:[P(Jl,{className:"uil uil-map-marker"}),t]}),B(Zl,{children:[P(Jl,{className:"uil uil-phone-alt"}),n]}),B(Zl,{children:[P(Jl,{className:"uil uil-envelope-alt"}),r]})]}),P(Uh,{src:i,allowFullScreen:"",loading:"lazy",referrerPolicy:"no-referrer-when-downgrade",title:"Ubicación de las oficinas de GalloExpre en Ecuador"})]})}const Bh=I.div`
   width: 100%;
   display: flex;
   align-items: center;
-`,Uh=I.input`
+`,Hh=I.input`
   width: 100%;
   color: ${e=>e.theme.Subtitle};
   border: 1px solid ${e=>e.theme.Description};
@@ -140,14 +140,14 @@ Error generating stack: `+l.message+`
   padding: 0.5rem 1rem;
   font-size: 1rem;
   outline: none;
-`,Bh=I.i`
+`,Vh=I.i`
   border: 1px solid ${e=>e.theme.Title};
   border-right: none;
   padding: 0.5rem;
   font-size: 1rem;
   background-color: ${e=>e.theme.Title};
   color: ${e=>e.theme.Background2};
-`;function ql({id:e,type:t,name:n,placeholder:r,icon:i}){return B(Fh,{children:[P(Bh,{className:`uil uil-${i}`}),P(Uh,{id:e,type:t,name:n,placeholder:r,required:!0})]})}const Hh=I.form`
+`;function ql({id:e,type:t,name:n,placeholder:r,icon:i}){return B(Bh,{children:[P(Vh,{className:`uil uil-${i}`}),P(Hh,{id:e,type:t,name:n,placeholder:r,required:!0})]})}const Wh=I.form`
   margin-top: 2.5rem;
   width: 400px;
   display: flex;
@@ -160,7 +160,7 @@ Error generating stack: `+l.message+`
   @media screen and (max-width: 36rem) {
     width: 100%;
   }
-`,Vh=I.textarea`
+`,Qh=I.textarea`
   width: 100%;
   border: 1px solid ${e=>e.theme.Description};
   background: none;
@@ -170,7 +170,7 @@ Error generating stack: `+l.message+`
   color: ${e=>e.theme.Subtitle};
   font-size: 1rem;
   outline: none;
-`,Wh=I.button`
+`,Gh=I.button`
   display: block;
   padding: 0.5rem 1rem;
   background-color: ${e=>e.theme.Title};
@@ -179,7 +179,7 @@ Error generating stack: `+l.message+`
   &:hover {
     background-color: ${e=>e.theme.Hover};
   }
-`;function Qh(){return B(Hh,{children:[P(ql,{name:"name",type:"name",icon:"user",placeholder:"Ingrese Nombre y Apellido"}),P(ql,{name:"email",type:"email",icon:"envelope-alt",placeholder:"Ingrese su correo"}),P(ql,{name:"phone",type:"text",icon:"phone-alt",placeholder:"Ingrese su número celular"}),P(Vh,{name:"project",cols:30,rows:10,placeholder:"Ingrese su consulta o requerimiento"}),P(Wh,{href:"#contact",children:"Enviar"})]})}const Gh=I.section`
+`;function Yh(){return B(Wh,{children:[P(ql,{name:"name",type:"name",icon:"user",placeholder:"Ingrese Nombre y Apellido"}),P(ql,{name:"email",type:"email",icon:"envelope-alt",placeholder:"Ingrese su correo"}),P(ql,{name:"phone",type:"text",icon:"phone-alt",placeholder:"Ingrese su número celular"}),P(Qh,{name:"project",cols:30,rows:10,placeholder:"Ingrese su consulta o requerimiento"}),P(Gh,{href:"#contact",children:"Enviar"})]})}const Kh=I.section`
   display: flex;
   gap: 2rem;
   align-items: flex-start;
@@ -197,9 +197,9 @@ Error generating stack: `+l.message+`
   @media screen and (max-width: 480px) {
     padding: 3rem 1rem;
   }
-`,Yh=I.h2`
+`,Xh=I.h2`
   font-size: 2rem;
-`,Kh=I.div`
+`,Zh=I.div`
   width: 100%;
   display: flex;
   gap: 1rem;
@@ -211,11 +211,11 @@ Error generating stack: `+l.message+`
     justify-content: center;
     align-items: center;
   }
-`,Xh=I.div`
+`,Jh=I.div`
   display: flex;
   gap: 1.5rem;
   flex-direction: column;
-`;function Zh(){const e=Yi.direccion[0],t=Yi.direccion[1];return B(Gh,{id:"contacto",children:[P(Yh,{children:"Contáctenos"}),B(Kh,{children:[B(Xh,{children:[P(Cs,{ciudad:e.ciudad,direccion:e.direccion,celular:e.celular,email:e.correo,map:e.map}),P(Cs,{ciudad:t.ciudad,direccion:t.direccion,celular:t.celular,email:t.correo,map:t.map})]}),P(Qh,{})]})]})}const Zd="/galloexpre/assets/logoGe-520c1d30.webp",Jh=I.footer`
+`;function qh(){const e=Yi.direccion[0],t=Yi.direccion[1];return B(Kh,{id:"contacto",children:[P(Xh,{children:"Contáctenos"}),B(Zh,{children:[B(Jh,{children:[P(Cs,{ciudad:e.ciudad,direccion:e.direccion,celular:e.celular,email:e.correo,map:e.map}),P(Cs,{ciudad:t.ciudad,direccion:t.direccion,celular:t.celular,email:t.correo,map:t.map})]}),P(Yh,{})]})]})}const Zd="/galloexpre/assets/logoGe-520c1d30.webp",bh=I.footer`
   display: flex;
   justify-content: space-between;
   justify-items: center;
@@ -232,13 +232,13 @@ Error generating stack: `+l.message+`
   @media screen and (max-width: 480px) {
     padding: 3rem 1rem;
   }
-`,qh=I.p`
+`,e0=I.p`
   max-width: 400px;
-`,bh=I.img`
+`,t0=I.img`
   width: 12rem;
   height: auto;
   object-fit: cover;
-`,e0=I.ul`
+`,n0=I.ul`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -251,7 +251,7 @@ Error generating stack: `+l.message+`
   &:hover {
     color: #ff0000;
   }
-`,t0=I.ul`
+`,r0=I.ul`
   margin-top: 0.7rem;
   display: flex;
   gap: 1rem;
@@ -261,7 +261,7 @@ Error generating stack: `+l.message+`
   &:hover {
     color: #ff0000;
   }
-`,n0=I.div`
+`,i0=I.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -270,7 +270,7 @@ Error generating stack: `+l.message+`
   flex-direction: column;
   align-items: center;
   gap: 0.7rem;
-`;function r0(){return B(Jh,{children:[B(n0,{children:[P(bh,{src:Zd,alt:"logo Gallo Expre"}),P(qh,{children:"Nos preocupamos por el seguimiento y cuidado que debe darse a su mercadería."})]}),B(Ps,{children:[P(Es,{children:"Menú"}),B(e0,{children:[P(bl,{children:P("a",{href:"#inicio",children:"Inicio"})}),P(bl,{children:P("a",{href:"#nosotros",children:"Nosotros"})}),P(bl,{children:P("a",{href:"#servicios",children:"Servicios"})})]}),B(t0,{children:[P(_s,{children:P("a",{href:"https://www.facebook.com/GalloExpre-CA-Compa%C3%B1ia-de-Transporte-Pesado-101126645601053",target:"_blank",rel:"noreferrer","aria-label":"Síguenos en Facebook",children:P("i",{className:"uil uil-facebook-f"})})}),P(_s,{children:P("a",{href:"https://wa.me/593984662435?text=Me%20ayudas%20con%20información%20",target:"_blank",rel:"noreferrer","aria-label":"Escríbenos a nuestro numero de Whatsapp",children:P("i",{className:"uil uil-whatsapp"})})})]})]}),B(Ps,{children:[P(Es,{children:"Contácto"}),B("p",{children:["Amparo Gallo: ",P("span",{children:"099 243 4904"})]}),B("p",{children:["William Chasi: ",P("span",{children:"099 588 9577 / 098 466 2435"})]}),P("p",{children:"operaciones1galloexpre@gmail.com"})]})]})}const i0=[{id:1,link:"#inicio",title:"Inicio"},{id:2,link:"#nosotros",title:"nosotros "},{id:3,link:"#servicios",title:"servicios"},{id:4,link:"#contacto",title:"contacto"}],l0=I.header`
+`;function l0(){return B(bh,{children:[B(i0,{children:[P(t0,{src:Zd,alt:"logo Gallo Expre"}),P(e0,{children:"Nos preocupamos por el seguimiento y cuidado que debe darse a su mercadería."})]}),B(Ps,{children:[P(Es,{children:"Menú"}),B(n0,{children:[P(bl,{children:P("a",{href:"#inicio",children:"Inicio"})}),P(bl,{children:P("a",{href:"#nosotros",children:"Nosotros"})}),P(bl,{children:P("a",{href:"#servicios",children:"Servicios"})})]}),B(r0,{children:[P(_s,{children:P("a",{href:"https://www.facebook.com/GalloExpre-CA-Compa%C3%B1ia-de-Transporte-Pesado-101126645601053",target:"_blank",rel:"noreferrer","aria-label":"Síguenos en Facebook",children:P("i",{className:"uil uil-facebook-f"})})}),P(_s,{children:P("a",{href:"https://wa.me/593984662435?text=Me%20ayudas%20con%20información%20",target:"_blank",rel:"noreferrer","aria-label":"Escríbenos a nuestro numero de Whatsapp",children:P("i",{className:"uil uil-whatsapp"})})})]})]}),B(Ps,{children:[P(Es,{children:"Contácto"}),B("p",{children:["Amparo Gallo: ",P("span",{children:"099 243 4904"})]}),B("p",{children:["William Chasi: ",P("span",{children:"099 588 9577 / 098 466 2435"})]}),P("p",{children:"operaciones1galloexpre@gmail.com"})]})]})}const o0=[{id:1,link:"#inicio",title:"Inicio"},{id:2,link:"#nosotros",title:"nosotros "},{id:3,link:"#servicios",title:"servicios"},{id:4,link:"#contacto",title:"contacto"}],u0=I.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -284,14 +284,14 @@ Error generating stack: `+l.message+`
   @media screen and (max-width: 480px) {
     padding: 1.5rem 1rem;
   }
-`,o0=I.img`
+`,a0=I.img`
   width: 10rem;
   height: auto;
   object-fit: cover;
   @media screen and (max-width: 768px) {
     filter: ${e=>e.show?"blur(2px)":"none"};
   }
-`,u0=I.ul`
+`,s0=I.ul`
   display: flex;
   gap: 2rem;
   color: ${e=>e.theme.Title};
@@ -310,7 +310,7 @@ Error generating stack: `+l.message+`
     align-items: center;
     justify-content: center;
   }
-`,a0=I.li`
+`,c0=I.li`
   position: relative;
   cursor: pointer;
   &:hover {
@@ -328,7 +328,7 @@ Error generating stack: `+l.message+`
   &:hover::before {
     width: 100%;
   }
-`,s0=I.i`
+`,d0=I.i`
   cursor: pointer;
   display: none;
   @media screen and (max-width: 768px) {
@@ -336,7 +336,7 @@ Error generating stack: `+l.message+`
     color: ${e=>e.theme.Subtitle};
     font-size: 2.5rem;
   }
-`,c0=I.i`
+`,f0=I.i`
   cursor: pointer;
   display: none;
   color: ${e=>e.theme.Subtitle};
@@ -351,7 +351,7 @@ Error generating stack: `+l.message+`
     right: 1rem;
     top: 2.5rem;
   }
-`;function d0({toggle:e,setToggle:t}){return B(l0,{children:[P(o0,{src:Zd,alt:"logo Gallo Expre",show:e}),B("nav",{children:[B(u0,{show:e,children:[i0.map(n=>P(a0,{children:P("a",{href:n.link,onClick:()=>t(!e),children:n.title.toUpperCase()})},n.id)),P(c0,{show:e,className:"uil uil-times",onClick:()=>t(!e)})]}),P(s0,{className:"uil uil-bars",onClick:()=>t(!e)})]})]})}const f0=I.section`
+`;function p0({toggle:e,setToggle:t}){return B(u0,{children:[P(a0,{src:Zd,alt:"logo Gallo Expre",show:e}),B("nav",{children:[B(s0,{show:e,children:[o0.map(n=>P(c0,{children:P("a",{href:n.link,onClick:()=>t(!e),children:n.title.toUpperCase()})},n.id)),P(f0,{show:e,className:"uil uil-times",onClick:()=>t(!e)})]}),P(d0,{className:"uil uil-bars",onClick:()=>t(!e)})]})]})}const m0="/galloexpre/assets/background-25968af0.webp",h0=I.section`
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -370,28 +370,28 @@ Error generating stack: `+l.message+`
   @media screen and (max-width: 480px) {
     padding: 3rem 1rem;
   }
-`,p0=I.div`
+`,v0=I.div`
   max-width: 60ch;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
   line-height: 1.2;
-`,m0=I.h1`
+`,g0=I.h1`
   color: ${e=>e.theme.Description};
   font-size: 3.6rem;
   font-weight: bold;
   @media screen and (max-width: 1280px) {
     font-size: 3.3rem;
   }
-`,h0=I.span`
+`,y0=I.span`
   color: ${e=>e.theme.Title};
-`,v0=I.p`
+`,w0=I.p`
   font-size: 2rem;
   @media screen and (max-width: 1280px) {
     font-size: 1.5rem;
   }
-`,g0=I.a`
+`,S0=I.a`
   display: block;
   padding: 0.5rem 1rem;
   background-color: ${e=>e.theme.Title};
@@ -400,7 +400,7 @@ Error generating stack: `+l.message+`
   &:hover {
     background-color: ${e=>e.theme.Hover};
   }
-`,y0=I.img`
+`,k0=I.img`
   width: 55%;
   @media screen and (max-width: 1080px) {
     width: 75%;
@@ -408,14 +408,14 @@ Error generating stack: `+l.message+`
   @media screen and (max-width: 768px) {
     width: 100%;
   }
-`;function w0(){return B(f0,{id:"inicio",children:[B(p0,{children:[B(m0,{children:["Servicio de ",P(h0,{children:"transporte de carga"})]}),P(v0,{children:"Líder de carga pesada a nivel nacional"}),P(g0,{href:"#contacto",children:"Contáctanos"})," "]}),P(y0,{src:"../src/assets/background.webp",alt:"camión de la empresa GalloExpre"})]})}const S0=I.i`
+`;function x0(){return B(h0,{id:"inicio",children:[B(v0,{children:[B(g0,{children:["Servicio de ",P(y0,{children:"transporte de carga"})]}),P(w0,{children:"Líder de carga pesada a nivel nacional"}),P(S0,{href:"#contacto",children:"Contáctanos"})," "]}),P(k0,{src:m0,alt:"camión de la empresa GalloExpre"})]})}const C0=I.i`
   font-size: 1.5rem;
   color: white;
 
   @media screen and (max-width: 62rem) {
     font-size: 1.25rem;
   }
-`,k0=I.a`
+`,E0=I.a`
   position: fixed;
   right: 2.5rem;
   bottom: ${e=>e.show?"4rem":"-20%"};
@@ -436,7 +436,7 @@ Error generating stack: `+l.message+`
   @media screen and (max-width: 480px) {
     right: 1rem;
   }
-`;function x0(){const[e,t]=Ce.useState(!1);return Ce.useEffect(()=>{window.addEventListener("scroll",()=>{window.scrollY>50?t(!0):t(!1)})},[]),P(k0,{href:"#","aria-label":"Return to home",show:e,children:P(S0,{className:"uil uil-arrow-up"})})}const C0=I.section`
+`;function _0(){const[e,t]=Ce.useState(!1);return Ce.useEffect(()=>{window.addEventListener("scroll",()=>{window.scrollY>50?t(!0):t(!1)})},[]),P(E0,{href:"#","aria-label":"Return to home",show:e,children:P(C0,{className:"uil uil-arrow-up"})})}const P0=I.section`
   display: flex;
   gap: 2rem;
   align-items: flex-start;
@@ -454,32 +454,32 @@ Error generating stack: `+l.message+`
   @media screen and (max-width: 480px) {
     padding: 3rem 1rem;
   }
-`,E0=I.h2`
+`,z0=I.h2`
   font-size: 2rem;
-`,_0=I.div`
+`,$0=I.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-`,P0=I.article`
+`,N0=I.article`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
   width: 300px;
   padding: 0.5rem 1rem;
-`,z0=I.div`
+`,T0=I.div`
   display: flex;
   align-items: center;
   padding: 0.3rem 1rem;
   border-radius: 50%;
   background-color: ${e=>e.theme.Background};
-`,$0=I.i`
+`,R0=I.i`
   object-fit: cover;
   font-size: 4rem;
   color: ${e=>e.theme.Title};
-`;function N0(){return B(C0,{id:"servicios",children:[P(E0,{children:"Servicios"}),P(_0,{children:Yi.servicios.map((e,t)=>B(P0,{children:[P(z0,{children:P($0,{className:`uil uil-${e.icon}`})}),P("p",{children:e.description})]},t))})]})}const T0=I.div`
+`;function A0(){return B(P0,{id:"servicios",children:[P(z0,{children:"Servicios"}),P($0,{children:Yi.servicios.map((e,t)=>B(N0,{children:[P(T0,{children:P(R0,{className:`uil uil-${e.icon}`})}),P("p",{children:e.description})]},t))})]})}const L0=I.div`
   position: fixed;
   top: 50%;
   right: -150px;
@@ -494,7 +494,7 @@ Error generating stack: `+l.message+`
   &:hover {
     right: -2px;
   }
-`,R0=I.a`
+`,I0=I.a`
   display: flex;
   gap: 0.5rem;
   position: relative;
@@ -503,11 +503,11 @@ Error generating stack: `+l.message+`
   text-decoration: none;
   line-height: 62px;
   color: white;
-`,A0=I.i`
+`,O0=I.i`
   font-size: 2.3rem;
-`,L0=I.p`
+`,j0=I.p`
   font-size: 1.6rem;
-`;function I0(){return P(T0,{children:B(R0,{href:"https://wa.me/593984662435?text=Me%20ayudas%20con%20información%20",target:"_blank",rel:"noreferrer","aria-label":"Escríbenos a nuestro numero de Whatsapp",children:[P(A0,{className:"uil uil-whatsapp"}),P(L0,{children:"Escríbenos"})]})})}const O0=Ch`
+`;function M0(){return P(L0,{children:B(I0,{href:"https://wa.me/593984662435?text=Me%20ayudas%20con%20información%20",target:"_blank",rel:"noreferrer","aria-label":"Escríbenos a nuestro numero de Whatsapp",children:[P(O0,{className:"uil uil-whatsapp"}),P(j0,{children:"Escríbenos"})]})})}const D0=Ch`
     *,*::before,*::after{
         box-sizing: border-box;
         margin: 0;
@@ -543,7 +543,7 @@ Error generating stack: `+l.message+`
     textarea, input{
         font-family: 'Poppins', sans-serif;
     }
-`,j0={Title:"#001781",Subtitle:"#282828",Description:"#878787",Background:"#dfdfdf",Background2:"#f4f4f4",WidthSection:"65rem",Hover:"#1968ad"},M0=I.main`
+`,F0={Title:"#001781",Subtitle:"#282828",Description:"#878787",Background:"#dfdfdf",Background2:"#f4f4f4",WidthSection:"65rem",Hover:"#1968ad"},U0=I.main`
   @media screen and (max-width: 768px) {
     filter: ${e=>e.show?"blur(2px)":"none"};
     pointer-events: ${e=>e.show?"none":""};
@@ -551,4 +551,4 @@ Error generating stack: `+l.message+`
     overflow-x: hidden;
     overflow-y: hidden;
   }
-`;function D0(){const[e,t]=Ce.useState(!1);return B(xf,{children:[P(O0,{toggle:e}),B(kh,{theme:j0,children:[P(d0,{toggle:e,setToggle:t}),B(M0,{show:e,children:[P(w0,{}),P(Ih,{}),P(N0,{}),P(Zh,{})]}),P(r0,{}),P(x0,{}),P(I0,{})]})]})}eo.createRoot(document.getElementById("root")).render(P(dn.StrictMode,{children:P(D0,{})}));
+`;function B0(){const[e,t]=Ce.useState(!1);return B(xf,{children:[P(D0,{toggle:e}),B(kh,{theme:F0,children:[P(p0,{toggle:e,setToggle:t}),B(U0,{show:e,children:[P(x0,{}),P(jh,{}),P(A0,{}),P(qh,{})]}),P(l0,{}),P(_0,{}),P(M0,{})]})]})}eo.createRoot(document.getElementById("root")).render(P(dn.StrictMode,{children:P(B0,{})}));
