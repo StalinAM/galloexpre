@@ -215,7 +215,7 @@ Error generating stack: `+l.message+`
   display: flex;
   gap: 1.5rem;
   flex-direction: column;
-`;function qh(){const e=Yi.direccion[0],t=Yi.direccion[1];return B(Kh,{id:"contacto",children:[P(Xh,{children:"Contáctenos"}),B(Zh,{children:[B(Jh,{children:[P(Cs,{ciudad:e.ciudad,direccion:e.direccion,celular:e.celular,email:e.correo,map:e.map}),P(Cs,{ciudad:t.ciudad,direccion:t.direccion,celular:t.celular,email:t.correo,map:t.map})]}),P(Yh,{})]})]})}const Zd="/galloexpre/assets/logoGe-520c1d30.webp",bh=I.footer`
+`;function qh(){const e=Yi.direccion[0],t=Yi.direccion[1];return B(Kh,{id:"contacto",children:[P(Xh,{children:"Contáctenos"}),B(Zh,{children:[B(Jh,{children:[P(Cs,{ciudad:e.ciudad,direccion:e.direccion,celular:e.celular,email:e.correo,map:e.map}),P(Cs,{ciudad:t.ciudad,direccion:t.direccion,celular:t.celular,email:t.correo,map:t.map})]}),P(Yh,{})]})]})}const Zd="/galloexpre/assets/logoGE-520c1d30.webp",bh=I.footer`
   display: flex;
   justify-content: space-between;
   justify-items: center;
