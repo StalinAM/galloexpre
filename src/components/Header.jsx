@@ -21,12 +21,16 @@ const Img = styled.img`
   width: 10rem;
   height: auto;
   object-fit: cover;
+  @media screen and (max-width: 768px) {
+    filter: ${(props) => (props.show ? 'blur(2px)' : 'none')};
+  }
 `
 const Menu = styled.ul`
   display: flex;
   gap: 2rem;
-  color: ${(props) => props.theme.Description};
+  color: ${(props) => props.theme.Title};
   font-weight: bold;
+  z-index: 101;
   @media screen and (max-width: 768px) {
     display: ${(props) => (props.show ? 'flex' : 'none')};
     position: fixed;
@@ -45,13 +49,13 @@ const Item = styled.li`
   position: relative;
   cursor: pointer;
   &:hover {
-    color: ${(props) => props.theme.Title};
+    color: ${(props) => props.theme.Hover};
   }
   &::before {
     content: '';
     position: absolute;
     height: 3px;
-    background-color: ${(props) => props.theme.Title};
+    background-color: ${(props) => props.theme.Hover};
     bottom: -10px;
     transition: 0.3s;
     width: 0%;
@@ -88,7 +92,7 @@ const Close = styled.i`
 function Header({ toggle, setToggle }) {
   return (
     <Container>
-      <Img src={logo} alt='logo Gallo Expre' />
+      <Img src={logo} alt='logo Gallo Expre' show={toggle} />
       <nav>
         <Menu show={toggle}>
           {listMenu.map((item) => (
