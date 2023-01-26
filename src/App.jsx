@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { ThemeProvider } from 'styled-components'
+import styled, { ThemeProvider } from 'styled-components'
 import About from './components/About'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
@@ -11,19 +11,29 @@ import Whatsapp from './components/Whatsapp'
 import GlobalStyles from './Style/GlobalStyles'
 import { DarkTheme } from './Style/Theme'
 
+const Container = styled.main`
+  @media screen and (max-width: 768px) {
+    filter: ${(props) => (props.show ? 'blur(2px)' : 'none')};
+    pointer-events: ${(props) => (props.show ? 'none' : '')};
+    user-select: ${(props) => (props.show ? 'none' : '')};
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+`
+
 function App() {
   const [toggle, setToggle] = useState(false)
   return (
     <>
-      <GlobalStyles />
+      <GlobalStyles toggle={toggle} />
       <ThemeProvider theme={DarkTheme}>
         <Header toggle={toggle} setToggle={setToggle} />
-        <main>
+        <Container show={toggle}>
           <Home />
           <About />
           <Services />
           <Contact />
-        </main>
+        </Container>
         <Footer />
         <ScrollUp />
         <Whatsapp />
