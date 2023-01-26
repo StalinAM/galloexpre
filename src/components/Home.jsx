@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import image from '../assets/background.webp'
 
 const Container = styled.section`
   display: flex;
@@ -75,10 +76,7 @@ function Home() {
         <Paragraph>Líder de carga pesada a nivel nacional</Paragraph>
         <Button href='#contacto'>Contáctanos</Button>{' '}
       </Content>
-      <Img
-        src='../src/assets/background.webp'
-        alt='camión de la empresa GalloExpre'
-      />
+      <Img src={image} alt='camión de la empresa GalloExpre' />
     </Container>
   )
 }
