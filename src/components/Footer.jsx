@@ -51,9 +51,14 @@ const Social = styled.ul`
   color: ${(props) => props.theme.Title};
 `
 const Icon = styled.li`
-  font-size: 2rem;
+  font-size: 1.5rem;
+  background-color: ${(props) => props.theme.Title};
+  color: white;
+  border-radius: 50%;
+  padding: 2.5px 8px;
+  cursor: pointer;
   &:hover {
-    color: #ff0000;
+    background-color: #ff0000;
   }
 `
 const Left = styled.div`
