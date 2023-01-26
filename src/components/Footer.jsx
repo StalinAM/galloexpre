@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../assets/logoGe.webp'
+import logo from '../assets/logoGE.webp'
+
 const Container = styled.footer`
   display: flex;
   justify-content: space-between;
