@@ -12,7 +12,7 @@ const Container = styled.div`
   box-shadow: -1px 3px 3px rgb(0 0 0 / 20%);
   transition: all 0.3s ease;
   padding: 0 12px 0;
-  background: #1bd741;
+  background: ${(props) => props.theme.Title};
   &:hover {
     right: -2px;
   }
@@ -40,6 +40,7 @@ function Whatsapp() {
         href='https://wa.me/593984662435?text=Me%20ayudas%20con%20información%20'
         target='_blank'
         rel='noreferrer'
+        aria-label='Escríbenos a nuestro numero de Whatsapp'
       >
         <Icon className='uil uil-whatsapp' />
         <Text>Escríbenos</Text>
