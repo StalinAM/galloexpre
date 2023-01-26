@@ -7,13 +7,11 @@
     "info": [
       {
         "name": "Misión",
-        "description": "Ofrecer un servicio de transporte de excelencia, calidad y oportunidad de trabajo para la sociedad, basado en la satisfacción de las necesidades  de nuestros clientes. Capacitando permanentemente a nuestro personal para brindar un servicio  rápido y competitivo. Operando en forma eficiente, segura y con tecnología de punta.",
-        "background": "../src/assets/6.webp"
+        "description": "Ofrecer un servicio de transporte de excelencia, calidad y oportunidad de trabajo para la sociedad, basado en la satisfacción de las necesidades  de nuestros clientes. Capacitando permanentemente a nuestro personal para brindar un servicio  rápido y competitivo. Operando en forma eficiente, segura y con tecnología de punta."
       },
       {
         "name": "Visión",
-        "description": "Ser una de las empresas líder de carga pesada a nivel nacional, ofreciendo servicios integrales, seguros y de calidad a cada una de nuestras Empresas, así como también cumplir con los sueños de sus miembros a fin de lograr cada una de sus metas y ser útiles a la sociedad en general.",
-        "background": "../src/assets/7.webp"
+        "description": "Ser una de las empresas líder de carga pesada a nivel nacional, ofreciendo servicios integrales, seguros y de calidad a cada una de nuestras Empresas, así como también cumplir con los sueños de sus miembros a fin de lograr cada una de sus metas y ser útiles a la sociedad en general."
       }
     ]
   },
