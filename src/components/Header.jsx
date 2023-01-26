@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import logo from '../assets/logoGe.webp'
+import logo from '../assets/logoGE.webp'
 import { listMenu } from '../data'
 const Container = styled.header`
   display: flex;
