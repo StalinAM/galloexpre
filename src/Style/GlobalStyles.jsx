@@ -11,6 +11,9 @@ const GlobalStyles = createGlobalStyle`
     body{
         overflow-x: hidden;
         font-family: 'Poppins', sans-serif;
+        @media screen and (max-width: 768px) {
+            overflow-y: ${(props) => (props.toggle ? 'hidden' : '')};
+        }
     }
     h1,h2,h3,h4,h5,h6{
         margin: 0;
