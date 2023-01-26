@@ -77,9 +77,9 @@ function Footer() {
           mercadería.
         </Text>
       </Left>
-      <div>
+      <Contacto>
+        <Title>Menú</Title>
         <Menu>
-          <Title>Menú</Title>
           <Link>
             <a href='#inicio'>Inicio</a>
           </Link>
@@ -96,6 +96,7 @@ function Footer() {
               href='https://www.facebook.com/GalloExpre-CA-Compa%C3%B1ia-de-Transporte-Pesado-101126645601053'
               target='_blank'
               rel='noreferrer'
+              aria-label='Síguenos en Facebook'
             >
               <i className='uil uil-facebook-f' />
             </a>
@@ -105,12 +106,13 @@ function Footer() {
               href='https://wa.me/593984662435?text=Me%20ayudas%20con%20información%20'
               target='_blank'
               rel='noreferrer'
+              aria-label='Escríbenos a nuestro numero de Whatsapp'
             >
               <i className='uil uil-whatsapp' />
             </a>
           </Icon>
         </Social>
-      </div>
+      </Contacto>
       <Contacto>
         <Title>Contácto</Title>
         <p>

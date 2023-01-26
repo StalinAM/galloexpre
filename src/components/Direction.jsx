@@ -27,6 +27,10 @@ const Map = styled.iframe`
   width: 400px;
   height: 300px;
   border: 0;
+  @media screen and (max-width: 480px) {
+    width: 300px;
+    height: 200px;
+  }
 `
 function Direction({ ciudad, direccion, celular, email, map }) {
   return (
@@ -51,6 +55,7 @@ function Direction({ ciudad, direccion, celular, email, map }) {
         allowFullScreen=''
         loading='lazy'
         referrerPolicy='no-referrer-when-downgrade'
+        title='Ubicación de las oficinas de GalloExpre en Ecuador'
       />
     </Container>
   )
