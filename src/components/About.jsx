@@ -1,6 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
 import data from '../assets/data.json'
+import mision from '../assets/6.webp'
+import vision from '../assets/7.webp'
 const Container = styled.section`
   display: flex;
   gap: 2rem;
@@ -52,7 +54,7 @@ const Box = styled.article`
   background-color: ${(props) => props.theme.Background2};
   padding: 2rem;
   border-radius: 2rem;
-  background-image: url(${(props) => props.background});
+  background-image: url(${(props) => props.name === 'Misión' ? mision : vision});
   background-size: cover;
   background-blend-mode: soft-light;
 `
@@ -94,7 +96,7 @@ function About() {
         </History>
         <Info>
           {data.nosotros.info.map((item, index) => (
-            <Box key={index} background={item.background}>
+            <Box key={index} name={item.name}>
               <TitleInfo>{item.name}</TitleInfo>
               <p>{item.description}</p>
             </Box>
