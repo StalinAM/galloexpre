@@ -1,4 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
+import '@fontsource/poppins/400.css'
+import '@fontsource/poppins/500.css'
 const GlobalStyles = createGlobalStyle`
     *,*::before,*::after{
         box-sizing: border-box;
